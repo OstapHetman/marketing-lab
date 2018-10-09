@@ -753,6 +753,7 @@ header {
     letter-spacing: 1.44px;
     color: #fff; }
   #gift button {
+    animation: gift 3s infinite;
     font-family: "Gilroy-ExtraBold";
     font-size: 27px;
     letter-spacing: 2.6px;
@@ -762,6 +763,25 @@ header {
     position: relative;
     padding: 17px 30px;
     transition: opacity 0.7s ease-in-out; }
+
+@-webkit-keyframes gift {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 #f8d241; }
+  70% {
+    -webkit-box-shadow: 0 0 0 10px rgba(248, 210, 65, 0); }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(248, 210, 65, 0); } }
+
+@keyframes gift {
+  0% {
+    -moz-box-shadow: 0 0 0 0 #f8d241;
+    box-shadow: 0 0 0 0 #f8d241; }
+  70% {
+    -moz-box-shadow: 0 0 0 10px rgba(248, 210, 65, 0);
+    box-shadow: 0 0 0 10px rgba(248, 210, 65, 0); }
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(248, 210, 65, 0);
+    box-shadow: 0 0 0 0 rgba(248, 210, 65, 0); } }
     #gift button:after {
       content: "";
       position: absolute;
@@ -771,6 +791,177 @@ header {
       right: 0;
       border-radius: 36px;
       box-shadow: 0 0 98px 38px rgba(213, 205, 205, 0.57); }
+
+#questions {
+  padding-top: 60px;
+  padding-bottom: calc(130px - 30px); }
+  #questions .title {
+    padding-bottom: 88px; }
+    #questions .title h2 {
+      font-family: "Gilroy-ExtraBold";
+      font-size: 54px;
+      font-weight: 400;
+      letter-spacing: 5.4px;
+      color: #2d2d2d; }
+    #questions .title .section-line {
+      width: 180px;
+      height: 8px;
+      background-color: #dd221c; }
+  #questions .card {
+    margin-bottom: 30px;
+    max-width: 507px;
+    border: unset; }
+    #questions .card .card-header {
+      border-radius: 10px;
+      background-color: #f8f8f8;
+      border: unset;
+      position: relative; }
+      #questions .card .card-header button[aria-expanded="true"]:after {
+        content: url("../img/home/open_arrow.png");
+        position: absolute;
+        top: 31%;
+        right: 6%;
+        width: 10px;
+        height: auto;
+        display: block; }
+      #questions .card .card-header button[aria-expanded="false"]:after {
+        content: url("../img/home/close_arrow.png");
+        position: absolute;
+        top: 31%;
+        right: 6%;
+        width: 10px;
+        height: auto;
+        display: block; }
+      #questions .card .card-header button {
+        font-family: "Gilroy-ExtraBold";
+        font-size: 19px;
+        letter-spacing: 1.3px;
+        color: #717171; }
+        #questions .card .card-header button:hover {
+          text-decoration: unset; }
+        #questions .card .card-header button:focus {
+          text-decoration: unset; }
+    #questions .card .card-body {
+      font-family: "MyriadPro";
+      font-size: 15px;
+      letter-spacing: 1.3px;
+      line-height: 25px;
+      color: #2d2d2d;
+      padding-top: unset;
+      padding-left: 35px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      background-color: #f8f8f8; }
+
+#any-q {
+  background-color: #dd221c;
+  padding-top: 18px;
+  padding-bottom: 18px; }
+  #any-q h3 {
+    font-family: "Proxima-Nova";
+    font-size: 35px;
+    letter-spacing: 1.3px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    padding-left: 30px; }
+  #any-q button {
+    font-family: "Gilroy-ExtraBold";
+    font-size: 22px;
+    letter-spacing: 2.2px;
+    animation: ten 3s infinite;
+    background-image: linear-gradient(-256deg, #ffc900 0%, #ffc900 66%, #ebbc07 78%, #ebbc07 100%);
+    border-radius: 31px;
+    color: #fff;
+    position: relative;
+    padding: 17px 30px;
+    transition: opacity 0.7s ease-in-out; }
+
+@-webkit-keyframes ten {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 #ffc900; }
+  70% {
+    -webkit-box-shadow: 0 0 0 10px rgba(255, 201, 0, 0); }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 201, 0, 0); } }
+
+@keyframes ten {
+  0% {
+    -moz-box-shadow: 0 0 0 0 #ffc900;
+    box-shadow: 0 0 0 0 #ffc900; }
+  70% {
+    -moz-box-shadow: 0 0 0 10px rgba(255, 201, 0, 0);
+    box-shadow: 0 0 0 10px rgba(255, 201, 0, 0); }
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(255, 201, 0, 0);
+    box-shadow: 0 0 0 0 rgba(255, 201, 0, 0); } }
+    #any-q button:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      right: 0;
+      border-radius: 30px;
+      box-shadow: 0 0 9px 4px rgba(255, 255, 255, 0.57); }
+
+footer .bottom-footer {
+  background-color: #eae7e7;
+  padding-top: 22px;
+  padding-bottom: 22px; }
+  footer .bottom-footer a.brand {
+    font-family: "Mania-Oblique";
+    font-size: 43px;
+    letter-spacing: 4.3px;
+    color: #dd221c; }
+    footer .bottom-footer a.brand:hover {
+      text-decoration: unset; }
+  footer .bottom-footer p {
+    font-family: "MyriadPro";
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    color: #9e9e9e; }
+  footer .bottom-footer a.btn {
+    font-family: "Gilroy-ExtraBold";
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    background-color: #dd221c;
+    border-radius: 31px;
+    color: #fff;
+    position: relative;
+    padding: 17px 30px;
+    transition: opacity 0.7s ease-in-out;
+    animation: two 3s infinite; }
+
+@-webkit-keyframes two {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 8, 0, 0.5); }
+  70% {
+    -webkit-box-shadow: 0 0 0 10px rgba(255, 8, 0, 0); }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 8, 0, 0); } }
+
+@keyframes two {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(255, 8, 0, 0.5);
+    box-shadow: 0 0 0 0 rgba(255, 8, 0, 0.5); }
+  70% {
+    -moz-box-shadow: 0 0 0 10px rgba(255, 8, 0, 0);
+    box-shadow: 0 0 0 10px rgba(255, 8, 0, 0); }
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(255, 8, 0, 0);
+    box-shadow: 0 0 0 0 rgba(255, 8, 0, 0); } }
+    footer .bottom-footer a.btn:hover {
+      opacity: 0.8; }
+    footer .bottom-footer a.btn:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      right: 0;
+      border-radius: 31px;
+      box-shadow: -5px 4px 36px 10px rgba(255, 8, 0, 0.4); }
 
 html {
   overflow: scroll;

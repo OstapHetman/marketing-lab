@@ -17,6 +17,7 @@
     color: #fff;
   }
   button {
+    @include pulseBtns(rgba(248, 210, 65, 1), rgba(248, 210, 65, 0), gift);
     @include font("Gilroy-ExtraBold", $btn-fnts, 400, 2.6px);
     background-color: #f8d241;
 
