@@ -1,0 +1,46 @@
+nav.navbar {
+  $brand-clr: #dd221c;
+  $brand-fnts: 43px;
+  $nav-color: #2d2d2d;
+  $nav-fnts: 17px;
+  padding-top: 30px;
+  padding-bottom: 5px;
+
+  a.navbar-brand {
+    @include font("Mania-Oblique", $brand-fnts, 400, 4.3px);
+    font-style: italic;
+    color: $brand-clr;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+  ul {
+    &.main-ul {
+      li {
+        padding-right: 15px;
+        &:last-child {
+          padding-right: 0;
+        }
+        a {
+          @include font("PTSans", $nav-fnts, 400, 1.7px);
+          color: $nav-color;
+        }
+      }
+    }
+
+    &.phone-ul {
+      li {
+        a:first-child {
+          @include font("Proxima-Nova", 25px, 700, 1px);
+          color: #2d2d2d;
+          &:hover {
+            text-decoration: unset;
+          }
+        }
+        a:nth-child(2) {
+          @include font("Proxima-Nova", 16px, 700, 1px);
+          color: #646464;
+        }
+      }
+    }
+  }
+}
