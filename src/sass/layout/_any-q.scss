@@ -2,6 +2,7 @@
   background-color: #dd221c;
   padding-top: 18px;
   padding-bottom: 18px;
+  box-shadow: 0 0 38px 11px #ededed;
   h3 {
     @include font("Proxima-Nova", 35px, 900, 1.3px);
     color: #fff;

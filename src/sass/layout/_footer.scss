@@ -1,8 +1,93 @@
 footer {
   $brand-clr: #dd221c;
   $brand-fnts: 43px;
+
+  padding-top: 50px;
+  background-color: #efefef;
+
+  // .link-col:first-child {
+  //   ul {
+  //     li:first-child {
+  //       a {
+  //         color: #dd221c;
+  //       }
+  //     }
+  //   }
+  // }
+
+  .footer-social {
+    .phone-ul {
+      li {
+        a:first-child {
+          @include font("Proxima-Nova", 25px, 700, 1px);
+          color: #2d2d2d;
+          &:hover {
+            text-decoration: unset;
+          }
+        }
+        a:nth-child(2) {
+          @include font("Proxima-Nova", 16px, 700, 1px);
+          color: #646464;
+          span {
+            position: relative;
+            &:before {
+              content: "";
+              position: absolute;
+              left: 0;
+              bottom: 0px;
+              width: 100%;
+              height: 2px;
+              background-color: #dd221c;
+            }
+          }
+          &:hover {
+            text-decoration: unset;
+          }
+        }
+      }
+    }
+    .social-ul {
+      margin-top: 40px;
+      li {
+        a:hover {
+          img {
+            transform: scale(1.1);
+            box-shadow: 0 24px 24px rgba(0, 0, 0, 0.2),
+              0 0 24px rgba(0, 0, 0, 0.12);
+            border-radius: 50%;
+          }
+        }
+        a {
+          img {
+            transition: all 0.5s ease-in-out;
+            border-radius: 50%;
+          }
+        }
+      }
+      li:not(:last-child) {
+        padding-right: 12px;
+      }
+    }
+  }
+
+  ul {
+    li {
+      a {
+        @include font("PTSans", 17px, 400, 1.3px);
+        color: #9b9a9a;
+        line-height: 25px;
+        transition: color 0.7s ease-in-out;
+        &:hover {
+          color: #dd221c;
+          text-decoration: unset;
+        }
+      }
+    }
+  }
+
   .bottom-footer {
     background-color: #eae7e7;
+    margin-top: 45px;
     padding-top: 22px;
     padding-bottom: 22px;
     a.brand {
