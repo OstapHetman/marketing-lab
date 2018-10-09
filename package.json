@@ -1,0 +1,23 @@
+{
+  "name": "stilark",
+  "version": "1.0.0",
+  "description": "Website",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.9.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node-sass -o src/css src/sass/ -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OstapHetman/stilark.git"
+  },
+  "author": "Ostap Hetman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OstapHetman/stilark/issues"
+  },
+  "homepage": "https://github.com/OstapHetman/stilark#readme"
+}

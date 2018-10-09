@@ -1,0 +1,82 @@
+#getCallModal {
+  $brdr-clr: #1a89c2;
+  $dismiss: #ff7400;
+  $inputBg: #f8f8f8;
+  $placeholder: #ff7400;
+  &.show {
+    display: flex !important;
+    .modal-dialog {
+      margin: auto;
+    }
+  }
+
+  .modal-header {
+    border-bottom: unset;
+
+    button {
+      color: $dismiss;
+      opacity: 1;
+      font-size: 40px;
+    }
+    padding-bottom: 0;
+  }
+  .modal-content {
+    border-radius: unset;
+    border: 8px $brdr-clr solid;
+  }
+  .modal-body {
+    input {
+      background-color: $inputBg;
+      border: unset;
+      border-radius: 10px;
+      padding: 12px 35px;
+      margin-top: 30px;
+      max-width: 305px;
+      margin: 0 auto;
+      &::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+
+        color: $placeholder;
+        font-size: em(15);
+      }
+      &::-moz-placeholder {
+        /* Firefox 19+ */
+
+        color: $placeholder;
+        font-size: em(15);
+      }
+      &:-ms-input-placeholder {
+        /* IE 10+ */
+        color: $placeholder;
+        font-size: em(15);
+      }
+      &:-moz-placeholder {
+        /* Firefox 18- */
+        color: $placeholder;
+        font-size: em(15);
+      }
+    }
+    padding-top: 0;
+    h1 {
+      font-size: 28px;
+      color: $dismiss;
+      font-family: "Lato-Regular", sans-serif;
+      font-weight: bold;
+    }
+    p {
+      font-size: 16px;
+      font-family: "Lato-Regular", sans-serif;
+      font-weight: bold;
+      color: $brdr-clr;
+    }
+    button {
+      font-family: "Lato-Regular", sans-serif;
+      font-weight: bold;
+      font-size: 18px;
+      border-radius: 10px;
+      background-color: $dismiss;
+      color: #fff;
+      padding: 10px 50px;
+    }
+  }
+}
