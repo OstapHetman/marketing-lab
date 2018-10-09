@@ -14,7 +14,8 @@
       @include sectionTitle;
     }
     .section-line {
-      width: 464px;
+      max-width: 464px;
+      width: 100%;
       height: 8px;
       background-color: #dd221c;
     }
@@ -53,7 +54,6 @@
     }
   }
   // button
-  @include pulseBtns;
   button {
     @include font("Gilroy-ExtraBold", $btn-fnts, 400, 1.9px);
     background-color: $btn-bg;
@@ -62,6 +62,7 @@
     position: relative;
     padding: 17px 30px;
     transition: opacity 0.7s ease-in-out;
+    @include pulseBtns(rgba(255, 8, 0, 0.5), rgba(255, 8, 0, 0), two);
     &:hover {
       opacity: 0.8;
     }

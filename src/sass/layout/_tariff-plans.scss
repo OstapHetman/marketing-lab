@@ -84,6 +84,11 @@
       }
       .tariff-item__body-btn {
         button {
+          @include pulseBtns(
+            rgba(68, 91, 211, 0.5),
+            rgba(68, 91, 211, 0),
+            four
+          );
           background-image: linear-gradient(
             -256deg,
             #771ad0 0%,
@@ -108,12 +113,17 @@
       .tariff-item__body-text {
         ul li {
           &:before {
-            background-color: #3297df;
+            background-color: #c4109d;
           }
         }
       }
       .tariff-item__body-btn {
         button {
+          @include pulseBtns(
+            rgba(178, 31, 170, 0.5),
+            rgba(178, 31, 170, 0),
+            five
+          );
           background-image: linear-gradient(
             -256deg,
             #8f35a6 0%,
@@ -138,12 +148,13 @@
       .tariff-item__body-text {
         ul li {
           &:before {
-            background-color: #3297df;
+            background-color: #158a0f;
           }
         }
       }
       .tariff-item__body-btn {
         button {
+          @include pulseBtns(rgba(9, 140, 200, 0.5), rgba(9, 140, 200, 0), six);
           background-image: linear-gradient(
             -94deg,
             #226ebd 0%,
