@@ -19,7 +19,11 @@
       background-color: #dd221c;
     }
   }
-
+  .services {
+    background: url("../img/home/header/header-bg.png") no-repeat;
+    background-size: contain;
+    background-position: center center;
+  }
   .services-item {
     margin-bottom: 40px;
     &__icon {

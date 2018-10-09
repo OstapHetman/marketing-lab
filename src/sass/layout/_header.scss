@@ -10,6 +10,8 @@ header {
   padding-top: 90px;
   padding-bottom: 90px;
 
+  border-bottom: 3px solid #f2f2f2;
+
   .left {
     h2 {
       @include font("Gilroy-ExtraBold", $head-text-fnts, 400, 5.4px);
@@ -47,6 +49,9 @@ header {
     }
   }
   .right {
+    background: url("../img/home/header/header-bg.png") no-repeat;
+    background-size: cover;
+    background-position-y: top;
     @include pulse;
     .circle {
       width: 448px;
