@@ -394,6 +394,91 @@ header {
       z-index: -1;
       box-shadow: -5px 4px 36px 10px rgba(255, 8, 0, 0.4); }
 
+#tariff-plans {
+  padding-top: 35px;
+  padding-bottom: 35px; }
+  #tariff-plans h2 {
+    font-family: "Gilroy-ExtraBold";
+    font-size: 54px;
+    font-weight: 400;
+    letter-spacing: 5.4px;
+    color: #2d2d2d;
+    margin-bottom: 45px; }
+  #tariff-plans .tariff-main {
+    background: url("../img/home/tariff/tariff-bg.png") no-repeat;
+    background-size: contain;
+    background-position: top center; }
+  #tariff-plans .tariff-item {
+    margin-top: 45px;
+    max-width: 328px; }
+    #tariff-plans .tariff-item__head {
+      padding-top: 50px;
+      padding-bottom: 40px; }
+      #tariff-plans .tariff-item__head h4 {
+        font-family: "Gilroy-ExtraBold";
+        font-size: 45px;
+        letter-spacing: 4.5px;
+        color: #fff;
+        margin-bottom: 0; }
+      #tariff-plans .tariff-item__head p {
+        font-family: "Gilroy-ExtraBold";
+        font-size: 20px;
+        letter-spacing: 2px;
+        color: #e3e3e3; }
+    #tariff-plans .tariff-item__body {
+      background-color: #f4f4f4;
+      padding-top: 45px;
+      padding-bottom: 45px; }
+      #tariff-plans .tariff-item__body-text {
+        font-family: "PTSans";
+        font-size: 20px;
+        letter-spacing: 2px;
+        color: #2d2d2d; }
+        #tariff-plans .tariff-item__body-text ul {
+          padding-left: 50px; }
+          #tariff-plans .tariff-item__body-text ul li {
+            position: relative;
+            line-height: 45px; }
+            #tariff-plans .tariff-item__body-text ul li:before {
+              content: "";
+              position: absolute;
+              top: 35%;
+              left: -20px;
+              width: 11px;
+              height: 11px;
+              opacity: 0.3;
+              border-radius: 50%; }
+      #tariff-plans .tariff-item__body-btn {
+        margin-top: 45px; }
+        #tariff-plans .tariff-item__body-btn button {
+          font-family: "Gilroy-ExtraBold";
+          font-size: 19px;
+          letter-spacing: 1.9px;
+          color: #fff;
+          border-radius: 31px;
+          padding: 17px 30px; }
+  #tariff-plans .tariff-col:nth-child(1) .tariff-item__head {
+    border-radius: 40px 40px 0 0;
+    background-image: linear-gradient(-256deg, #7b15d0 0%, #7b15d0 17%, #00b1d7 50%, #00b1d7 100%); }
+  #tariff-plans .tariff-col:nth-child(1) .tariff-item__body-text ul li:before {
+    background-color: #3297df; }
+  #tariff-plans .tariff-col:nth-child(1) .tariff-item__body-btn button {
+    background-image: linear-gradient(-256deg, #771ad0 0%, #771ad0 19%, #445bd3 60%, #445bd3 100%); }
+  #tariff-plans .tariff-col:nth-child(2) .tariff-item__head {
+    border-radius: 40px 40px 0 0;
+    background-image: linear-gradient(-256deg, #1c7c99 0%, #1c7c99 10%, #b21faa 47%, #b21faa 100%); }
+  #tariff-plans .tariff-col:nth-child(2) .tariff-item__body-text ul li:before {
+    background-color: #3297df; }
+  #tariff-plans .tariff-col:nth-child(2) .tariff-item__body-btn button {
+    background-image: linear-gradient(-256deg, #8f35a6 0%, #8f35a6 19%, #b21faa 60%, #b21faa 100%); }
+  #tariff-plans .tariff-col:nth-child(3) .tariff-item__head {
+    border-radius: 40px 40px 0 0;
+    background-image: linear-gradient(-256deg, #2669bb 0%, #2669bb 50%, #088ec9 70%, #088ec9 100%); }
+  #tariff-plans .tariff-col:nth-child(3) .tariff-item__body-text ul li:before {
+    background-color: #3297df; }
+  #tariff-plans .tariff-col:nth-child(3) .tariff-item__body-btn button {
+    background-image: linear-gradient(-94deg, #226ebd 0%, #226ebd 28%, #098cc8 47%, #098cc8 74%); }
+
 html {
   overflow: scroll;
   overflow-x: hidden; }
