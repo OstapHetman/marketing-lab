@@ -1,0 +1,39 @@
+#gift {
+  $btn-fnts: 27px;
+
+  background: url("../img/home/gift/gift-bg.png") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-top: 55px;
+  padding-bottom: 30px;
+  h4 {
+    @include font("Proxima-Nova", 48px, 900, 3.6px);
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 52px;
+  }
+  small {
+    @include font("MyriadPro", 18px, 400, 1.44px);
+    color: #fff;
+  }
+  button {
+    @include font("Gilroy-ExtraBold", $btn-fnts, 400, 2.6px);
+    background-color: #f8d241;
+
+    border-radius: 36px;
+    color: #fff;
+    position: relative;
+    padding: 17px 30px;
+    transition: opacity 0.7s ease-in-out;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      right: 0;
+      border-radius: 36px;
+      box-shadow: 0 0 98px 38px rgba(213, 205, 205, 0.57);
+    }
+  }
+}
