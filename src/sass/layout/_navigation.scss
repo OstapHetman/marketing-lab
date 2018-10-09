@@ -16,13 +16,29 @@ nav.navbar {
   ul {
     &.main-ul {
       li {
-        padding-right: 15px;
+        padding-right: 25px;
         &:last-child {
           padding-right: 0;
         }
+        &.active {
+          a:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 5px;
+            width: 100%;
+            height: 2px;
+            background-color: #dd221c;
+          }
+        }
         a {
-          @include font("PTSans", $nav-fnts, 400, 1.7px);
-          color: $nav-color;
+          &.nav-link {
+            @include font("PTSans", $nav-fnts, 400, 1.7px);
+            color: $nav-color;
+            padding-right: 0;
+            padding-left: 0;
+            position: relative;
+          }
         }
       }
     }
@@ -39,6 +55,15 @@ nav.navbar {
         a:nth-child(2) {
           @include font("Proxima-Nova", 16px, 700, 1px);
           color: #646464;
+          span {
+            position: relative;
+            &:after {
+              bottom: 0px;
+            }
+          }
+          &:hover {
+            text-decoration: unset;
+          }
         }
       }
     }
