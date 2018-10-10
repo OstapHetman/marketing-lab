@@ -1057,6 +1057,9 @@ footer {
     padding-bottom: 0; }
 
 #comming-soon {
+  background: url("../img/home/header/header-bg.png") no-repeat;
+  background-size: contain;
+  background-position: center center;
   padding: 20px 0px; }
   #comming-soon h2 {
     font-family: "Gilroy-ExtraBold";
