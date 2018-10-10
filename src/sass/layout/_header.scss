@@ -73,11 +73,39 @@ header {
         z-index: -1;
         box-shadow: -5px 4px 36px 10px rgba(255, 8, 0, 0.4);
       }
-      img {
+      .laptop-image {
         position: absolute;
         bottom: 12%;
         left: -14.5%;
         max-width: 580px;
+        img {
+          position: relative;
+        }
+      }
+      .content {
+        position: absolute;
+        top: 84px;
+        left: 2px;
+        right: 0;
+        margin: auto;
+        width: 438px;
+        height: 275px;
+        overflow: auto;
+        img {
+          width: 430px;
+          height: auto;
+        }
+      }
+      .content::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      .content::-webkit-scrollbar-track {
+        background: #f8f8f8;
+      }
+
+      .content::-webkit-scrollbar-thumb {
+        background-color: #dd221c;
       }
     }
   }

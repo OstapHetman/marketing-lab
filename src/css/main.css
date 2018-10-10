@@ -298,11 +298,31 @@ header {
         border-radius: 50%;
         z-index: -1;
         box-shadow: -5px 4px 36px 10px rgba(255, 8, 0, 0.4); }
-      header .right .circle img {
+      header .right .circle .laptop-image {
         position: absolute;
         bottom: 12%;
         left: -14.5%;
         max-width: 580px; }
+        header .right .circle .laptop-image img {
+          position: relative; }
+      header .right .circle .content {
+        position: absolute;
+        top: 84px;
+        left: 2px;
+        right: 0;
+        margin: auto;
+        width: 438px;
+        height: 275px;
+        overflow: auto; }
+        header .right .circle .content img {
+          width: 430px;
+          height: auto; }
+      header .right .circle .content::-webkit-scrollbar {
+        width: 8px; }
+      header .right .circle .content::-webkit-scrollbar-track {
+        background: #f8f8f8; }
+      header .right .circle .content::-webkit-scrollbar-thumb {
+        background-color: #dd221c; }
 
 #services-cost {
   padding-top: 45px;
@@ -1023,10 +1043,6 @@ footer {
         right: 0;
         border-radius: 31px;
         box-shadow: -5px 4px 36px 10px rgba(255, 8, 0, 0.4); }
-
-html {
-  overflow: scroll;
-  overflow-x: hidden; }
 
 ::-webkit-scrollbar {
   width: 0px;
