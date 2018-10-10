@@ -1,14 +1,14 @@
 // ===== Base Folder====== //
 @import "base/typography";
 // ======================= //
+// ===== Helpers Folder====== //
+@import "helpers/mixins";
+// ======================= //
 // ===== Components Folder====== //
 @import "components/buttons";
 @import "components/burger";
 @import "components/animation";
 @import "components/modal";
-// ======================= //
-// ===== Helpers Folder====== //
-@import "helpers/mixins";
 // ======================= //
 // ===== Layout Folder====== //
 @import "layout/navigation";
@@ -28,6 +28,9 @@
 body {
   overflow: scroll;
   overflow-y: hidden;
+  &.modal-open {
+    overflow-y: hidden !important;
+  }
 }
 ::-webkit-scrollbar {
   width: 0px; /* remove scrollbar space */

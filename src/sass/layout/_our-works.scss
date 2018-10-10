@@ -41,7 +41,7 @@
           right: 0;
           margin-left: auto;
           margin-right: auto;
-          button {
+          a {
             @include font("Gilroy-ExtraBold", 15px, 400, 1.5px);
             color: #fff;
             border-radius: 25px;
@@ -57,7 +57,7 @@
         }
       }
       .work-item__btn {
-        button {
+        a {
           background-color: #3a2316;
           @include pulseBtns(rgba(58, 35, 22, 0.5), rgba(58, 35, 22, 0), seven);
         }
@@ -70,7 +70,7 @@
         }
       }
       .work-item__btn {
-        button {
+        a {
           background-color: #f8d241;
           @include pulseBtns(
             rgba(248, 210, 65, 0.5),
@@ -87,7 +87,7 @@
         }
       }
       .work-item__btn {
-        button {
+        a {
           background-color: #389ade;
           @include pulseBtns(
             rgba(56, 154, 222, 0.5),
@@ -104,7 +104,7 @@
         }
       }
       .work-item__btn {
-        button {
+        a {
           background-color: #3a2316;
           @include pulseBtns(rgba(58, 35, 22, 0.5), rgba(58, 35, 22, 0), seven);
         }
@@ -117,7 +117,7 @@
         }
       }
       .work-item__btn {
-        button {
+        a {
           background-color: #f8d241;
           @include pulseBtns(
             rgba(248, 210, 65, 0.5),
@@ -134,7 +134,7 @@
         }
       }
       .work-item__btn {
-        button {
+        a {
           background-color: #389ade;
           background-color: #389ade;
           @include pulseBtns(

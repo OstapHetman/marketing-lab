@@ -82,6 +82,28 @@ header {
           position: relative;
         }
       }
+      .view-all-projects {
+        position: absolute;
+        bottom: 6%;
+        left: 29.3%;
+        a {
+          @include font("PTSans", 16, 400, 2px);
+          color: #fff;
+          position: relative;
+          &:hover {
+            text-decoration: unset;
+          }
+          &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0px;
+            width: 100%;
+            height: 1px;
+            background-color: #fff;
+          }
+        }
+      }
       .content {
         position: absolute;
         top: 84px;

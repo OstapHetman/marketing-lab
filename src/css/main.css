@@ -3,6 +3,10 @@
   src: url("../fonts/MyriadPro.otf") format("truetype"); }
 
 @font-face {
+  font-family: "Lato";
+  src: url("../fonts/LatoRegular.ttf") format("truetype"); }
+
+@font-face {
   font-family: "PTSans";
   src: url("../fonts/PtSans.ttf") format("truetype"); }
 
@@ -81,67 +85,137 @@
   transform: scaleX(1);
   transform-origin: bottom left; }
 
-#getCallModal.show {
-  display: flex !important; }
-  #getCallModal.show .modal-dialog {
-    margin: auto; }
+#mainModal.show {
+  display: flex !important;
+  background: rgba(0, 0, 0, 0.7); }
+  #mainModal.show .modal-dialog {
+    margin: auto;
+    max-width: 425px; }
 
-#getCallModal .modal-header {
+#mainModal .modal-header {
   border-bottom: unset;
+  padding-top: 70px;
+  position: relative;
   padding-bottom: 0; }
-  #getCallModal .modal-header button {
-    color: #ff7400;
+  #mainModal .modal-header button {
+    color: #d20817;
     opacity: 1;
-    font-size: 40px; }
+    font-family: "Lato";
+    font-size: 40px;
+    letter-spacing: 0.7px;
+    position: absolute;
+    right: 25px;
+    top: 10px; }
+    #mainModal .modal-header button:focus {
+      outline: unset; }
+  #mainModal .modal-header h5 {
+    font-family: "MyriadPro";
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #d20817;
+    line-height: 30px;
+    margin-bottom: 30px; }
 
-#getCallModal .modal-content {
-  border-radius: unset;
-  border: 8px #1a89c2 solid; }
+#mainModal .modal-content {
+  border-radius: 20px;
+  border: unset; }
 
-#getCallModal .modal-body {
-  padding-top: 0; }
-  #getCallModal .modal-body input {
-    background-color: #f8f8f8;
+#mainModal .modal-body {
+  max-width: 330px;
+  width: 100%;
+  margin: auto;
+  padding-bottom: 30px; }
+  #mainModal .modal-body form p {
+    font-family: "Lato";
+    font-size: 14px;
+    letter-spacing: 0.7px; }
+  #mainModal .modal-body form .form-group label {
+    font-family: "Lato";
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    color: #000; }
+  #mainModal .modal-body form input:focus {
+    outline: unset;
+    box-shadow: unset; }
+  #mainModal .modal-body form input[type="text"] {
+    background-color: #f3f2f2;
     border: unset;
     border-radius: 10px;
-    padding: 12px 35px;
+    padding: 25px 16px;
     margin-top: 30px;
-    max-width: 305px;
+    font-family: "Lato";
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #3b3a3a;
     margin: 0 auto; }
-    #getCallModal .modal-body input::-webkit-input-placeholder {
+    #mainModal .modal-body form input[type="text"]::-webkit-input-placeholder {
       /* Chrome/Opera/Safari */
-      color: #ff7400;
-      font-size: em(15); }
-    #getCallModal .modal-body input::-moz-placeholder {
+      font-family: "Lato";
+      font-size: 20px;
+      letter-spacing: 1px;
+      color: #3b3a3a; }
+    #mainModal .modal-body form input[type="text"]::-moz-placeholder {
       /* Firefox 19+ */
-      color: #ff7400;
-      font-size: em(15); }
-    #getCallModal .modal-body input:-ms-input-placeholder {
+      font-family: "Lato";
+      font-size: 20px;
+      letter-spacing: 1px;
+      color: #3b3a3a; }
+    #mainModal .modal-body form input[type="text"]:-ms-input-placeholder {
       /* IE 10+ */
-      color: #ff7400;
-      font-size: em(15); }
-    #getCallModal .modal-body input:-moz-placeholder {
+      font-family: "Lato";
+      font-size: 20px;
+      letter-spacing: 1px;
+      color: #3b3a3a; }
+    #mainModal .modal-body form input[type="text"]:-moz-placeholder {
       /* Firefox 18- */
-      color: #ff7400;
-      font-size: em(15); }
-  #getCallModal .modal-body h1 {
-    font-size: 28px;
-    color: #ff7400;
-    font-family: "Lato-Regular", sans-serif;
-    font-weight: bold; }
-  #getCallModal .modal-body p {
-    font-size: 16px;
-    font-family: "Lato-Regular", sans-serif;
-    font-weight: bold;
-    color: #1a89c2; }
-  #getCallModal .modal-body button {
-    font-family: "Lato-Regular", sans-serif;
-    font-weight: bold;
-    font-size: 18px;
-    border-radius: 10px;
-    background-color: #ff7400;
+      font-family: "Lato";
+      font-size: 20px;
+      letter-spacing: 1px;
+      color: #3b3a3a; }
+  #mainModal .modal-body form .nav-tabs {
+    border-bottom: unset;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem; }
+    #mainModal .modal-body form .nav-tabs .nav-link {
+      color: #000;
+      font-family: "Lato";
+      font-size: 10px;
+      letter-spacing: 0.5px;
+      background-color: #f3f2f2;
+      border-radius: 5px;
+      border: unset;
+      padding: 5px 17px; }
+      #mainModal .modal-body form .nav-tabs .nav-link:hover {
+        border: unset; }
+    #mainModal .modal-body form .nav-tabs .nav-link.active {
+      background-color: #d20817;
+      color: #fff; }
+  #mainModal .modal-body form .tab-content {
+    margin-bottom: 38px; }
+  #mainModal .modal-body input[type="submit"] {
+    font-family: "Gilroy-ExtraBold";
+    font-size: 26px;
+    letter-spacing: 1.9px;
+    background-color: #d20817;
+    border-radius: 31px;
     color: #fff;
-    padding: 10px 50px; }
+    position: relative;
+    padding: 8px 21px;
+    transition: opacity 0.7s ease-in-out;
+    box-shadow: -5px 3px 36px 10px rgba(251, 0, 7, 0.4); }
+    #mainModal .modal-body input[type="submit"]:hover {
+      opacity: 0.8; }
+  #mainModal .modal-body small {
+    font-family: "MyriadPro";
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    color: #000;
+    display: block;
+    padding-top: 10px; }
+    #mainModal .modal-body small a {
+      color: #000;
+      text-decoration: underline; }
 
 nav.navbar {
   padding-top: 30px;
@@ -305,6 +379,26 @@ header {
         max-width: 580px; }
         header .right .circle .laptop-image img {
           position: relative; }
+      header .right .circle .view-all-projects {
+        position: absolute;
+        bottom: 6%;
+        left: 29.3%; }
+        header .right .circle .view-all-projects a {
+          font-family: "PTSans";
+          font-size: 16;
+          letter-spacing: 2px;
+          color: #fff;
+          position: relative; }
+          header .right .circle .view-all-projects a:hover {
+            text-decoration: unset; }
+          header .right .circle .view-all-projects a:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0px;
+            width: 100%;
+            height: 1px;
+            background-color: #fff; }
       header .right .circle .content {
         position: absolute;
         top: 84px;
@@ -345,6 +439,8 @@ header {
     background: url("../img/home/header/header-bg.png") no-repeat;
     background-size: contain;
     background-position: center center; }
+    #services-cost .services a:hover {
+      text-decoration: unset; }
   #services-cost .services-item {
     margin-bottom: 40px;
     transition: all 0.75s ease-in-out;
@@ -602,7 +698,7 @@ header {
         right: 0;
         margin-left: auto;
         margin-right: auto; }
-        #our-works .work-col .work-item__text .work-item__btn button {
+        #our-works .work-col .work-item__text .work-item__btn a {
           font-family: "Gilroy-ExtraBold";
           font-size: 15px;
           letter-spacing: 1.5px;
@@ -611,7 +707,7 @@ header {
           padding: 13px 23px; }
   #our-works .work-col:nth-child(1) .work-item__text h6 {
     color: #3a2316; }
-  #our-works .work-col:nth-child(1) .work-item__btn button {
+  #our-works .work-col:nth-child(1) .work-item__btn a {
     background-color: #3a2316;
     animation: seven 3s infinite; }
 
@@ -635,7 +731,7 @@ header {
     box-shadow: 0 0 0 0 rgba(58, 35, 22, 0); } }
   #our-works .work-col:nth-child(2) .work-item__text h6 {
     color: #f8d241; }
-  #our-works .work-col:nth-child(2) .work-item__btn button {
+  #our-works .work-col:nth-child(2) .work-item__btn a {
     background-color: #f8d241;
     animation: eight 3s infinite; }
 
@@ -659,7 +755,7 @@ header {
     box-shadow: 0 0 0 0 rgba(248, 210, 65, 0); } }
   #our-works .work-col:nth-child(3) .work-item__text h6 {
     color: #389ade; }
-  #our-works .work-col:nth-child(3) .work-item__btn button {
+  #our-works .work-col:nth-child(3) .work-item__btn a {
     background-color: #389ade;
     animation: nine 3s infinite; }
 
@@ -683,7 +779,7 @@ header {
     box-shadow: 0 0 0 0 rgba(56, 154, 222, 0); } }
   #our-works .work-col:nth-child(4) .work-item__text h6 {
     color: #3a2316; }
-  #our-works .work-col:nth-child(4) .work-item__btn button {
+  #our-works .work-col:nth-child(4) .work-item__btn a {
     background-color: #3a2316;
     animation: seven 3s infinite; }
 
@@ -707,7 +803,7 @@ header {
     box-shadow: 0 0 0 0 rgba(58, 35, 22, 0); } }
   #our-works .work-col:nth-child(5) .work-item__text h6 {
     color: #f8d241; }
-  #our-works .work-col:nth-child(5) .work-item__btn button {
+  #our-works .work-col:nth-child(5) .work-item__btn a {
     background-color: #f8d241;
     animation: eight 3s infinite; }
 
@@ -731,7 +827,7 @@ header {
     box-shadow: 0 0 0 0 rgba(248, 210, 65, 0); } }
   #our-works .work-col:nth-child(6) .work-item__text h6 {
     color: #389ade; }
-  #our-works .work-col:nth-child(6) .work-item__btn button {
+  #our-works .work-col:nth-child(6) .work-item__btn a {
     background-color: #389ade;
     background-color: #389ade;
     animation: nine 3s infinite; }
@@ -1073,7 +1169,7 @@ footer {
     letter-spacing: 2px;
     color: #ec3832;
     margin-bottom: 33px; }
-  #comming-soon button {
+  #comming-soon a {
     font-family: "Gilroy-ExtraBold";
     font-size: 22px;
     letter-spacing: 2.6px;
@@ -1103,9 +1199,9 @@ footer {
   100% {
     -moz-box-shadow: 0 0 0 0 rgba(255, 8, 0, 0);
     box-shadow: 0 0 0 0 rgba(255, 8, 0, 0); } }
-    #comming-soon button:hover {
+    #comming-soon a:hover {
       opacity: 0.8; }
-    #comming-soon button:after {
+    #comming-soon a:after {
       content: "";
       position: absolute;
       width: 100%;
@@ -1139,6 +1235,8 @@ footer {
 body {
   overflow: scroll;
   overflow-y: hidden; }
+  body.modal-open {
+    overflow-y: hidden !important; }
 
 ::-webkit-scrollbar {
   width: 0px;

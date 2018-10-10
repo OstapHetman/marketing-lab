@@ -24,6 +24,11 @@
     background: url("../img/home/header/header-bg.png") no-repeat;
     background-size: contain;
     background-position: center center;
+    a {
+      &:hover {
+        text-decoration: unset;
+      }
+    }
   }
   .services-item {
     margin-bottom: 40px;

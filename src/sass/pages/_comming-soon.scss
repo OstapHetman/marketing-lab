@@ -31,7 +31,7 @@
     color: $p-color;
     margin-bottom: 33px;
   }
-  button {
+  a {
     @include font("Gilroy-ExtraBold", $btn-fnts, 400, 2.6px);
     background-color: $btn-bg;
     border-radius: 36px;
