@@ -9,3 +9,11 @@ cardBtns.forEach(cardBtn => {
     e.target.classList.toggle("open");
   });
 });
+
+setTimeout(() => {
+  const preloader = document.querySelector(".preloader");
+  preloader.classList.add("none");
+
+  const body = document.getElementsByTagName("body")[0];
+  body.style.overflow = "auto";
+}, 2000);

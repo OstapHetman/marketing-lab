@@ -94,6 +94,7 @@ header {
         img {
           width: 430px;
           height: auto;
+          z-index: 10;
         }
       }
       .content::-webkit-scrollbar {
