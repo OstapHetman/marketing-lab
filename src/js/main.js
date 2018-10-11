@@ -21,7 +21,7 @@ setTimeout(() => {
   preloader.classList.add("none");
   body.style.overflow = "auto";
   html.style.overflow = "auto";
-}, 2500);
+}, 2000);
 
 if (document.querySelector(".counter")) {
   const countdown = document.querySelector(".counter");
