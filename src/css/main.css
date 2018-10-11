@@ -1852,35 +1852,34 @@ footer {
   #comming-soon-page nav.navbar {
     padding-top: 0;
     padding-bottom: 0; }
-
-#comming-soon {
-  background: url("../img/home/header/header-bg.png") no-repeat;
-  background-size: contain;
-  background-position: center center;
-  padding: 20px 0px; }
-  #comming-soon h2 {
-    font-family: "Gilroy-ExtraBold";
-    font-size: 54px;
-    letter-spacing: 5.4px;
-    color: #2d2d2d;
-    margin-bottom: 45px; }
-  #comming-soon p {
-    font-family: "PTSans";
-    font-size: 20px;
-    letter-spacing: 2px;
-    color: #ec3832;
-    margin-bottom: 33px; }
-  #comming-soon a {
-    font-family: "Gilroy-ExtraBold";
-    font-size: 22px;
-    letter-spacing: 2.6px;
-    background-color: #dd221c;
-    border-radius: 36px;
-    color: #fff;
-    position: relative;
-    padding: 17px 30px;
-    transition: opacity 0.7s ease-in-out;
-    animation: one 3s infinite; }
+  #comming-soon-page #comming-soon {
+    background: url("../img/home/header/header-bg.png") no-repeat;
+    background-size: contain;
+    background-position: center center;
+    padding: 20px 0px; }
+    #comming-soon-page #comming-soon h2 {
+      font-family: "Gilroy-ExtraBold";
+      font-size: 54px;
+      letter-spacing: 5.4px;
+      color: #2d2d2d;
+      margin-bottom: 45px; }
+    #comming-soon-page #comming-soon p {
+      font-family: "PTSans";
+      font-size: 20px;
+      letter-spacing: 2px;
+      color: #ec3832;
+      margin-bottom: 33px; }
+    #comming-soon-page #comming-soon a {
+      font-family: "Gilroy-ExtraBold";
+      font-size: 22px;
+      letter-spacing: 2.6px;
+      background-color: #dd221c;
+      border-radius: 36px;
+      color: #fff;
+      position: relative;
+      padding: 17px 30px;
+      transition: opacity 0.7s ease-in-out;
+      animation: one 3s infinite; }
 
 @-webkit-keyframes one {
   0% {
@@ -1900,38 +1899,60 @@ footer {
   100% {
     -moz-box-shadow: 0 0 0 0 rgba(255, 8, 0, 0);
     box-shadow: 0 0 0 0 rgba(255, 8, 0, 0); } }
-    #comming-soon a:hover {
-      opacity: 0.8; }
-    #comming-soon a:after {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      right: 0;
-      border-radius: 36px;
-      z-index: -1;
-      box-shadow: -5px 4px 36px 10px rgba(255, 8, 0, 0.4); }
-  #comming-soon .counter h4 {
-    font-family: "Gilroy-ExtraBold";
-    font-size: 40px;
-    letter-spacing: 5.4px; }
-  #comming-soon .counter p {
-    font-weight: bold; }
+      #comming-soon-page #comming-soon a:hover {
+        opacity: 0.8; }
+      #comming-soon-page #comming-soon a:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        border-radius: 36px;
+        z-index: -1;
+        box-shadow: -5px 4px 36px 10px rgba(255, 8, 0, 0.4); }
+    #comming-soon-page #comming-soon .counter h4 {
+      font-family: "Gilroy-ExtraBold";
+      font-size: 40px;
+      letter-spacing: 5.4px; }
+    #comming-soon-page #comming-soon .counter p {
+      font-weight: bold; }
+  #comming-soon-page #comming-soon-footer {
+    background-color: unset; }
+    #comming-soon-page #comming-soon-footer .social-ul {
+      margin-top: 0; }
+      #comming-soon-page #comming-soon-footer .social-ul li a:hover img {
+        transform: scale(1.1);
+        box-shadow: 0 24px 24px rgba(0, 0, 0, 0.2), 0 0 24px rgba(0, 0, 0, 0.12);
+        border-radius: 50%; }
+      #comming-soon-page #comming-soon-footer .social-ul li a img {
+        transition: all 0.5s ease-in-out;
+        border-radius: 50%; }
+      #comming-soon-page #comming-soon-footer .social-ul li:not(:last-child) {
+        padding-right: 30px; }
 
-#comming-soon-footer {
-  background-color: unset; }
-  #comming-soon-footer .social-ul {
-    margin-top: 0; }
-    #comming-soon-footer .social-ul li a:hover img {
-      transform: scale(1.1);
-      box-shadow: 0 24px 24px rgba(0, 0, 0, 0.2), 0 0 24px rgba(0, 0, 0, 0.12);
-      border-radius: 50%; }
-    #comming-soon-footer .social-ul li a img {
-      transition: all 0.5s ease-in-out;
-      border-radius: 50%; }
-    #comming-soon-footer .social-ul li:not(:last-child) {
-      padding-right: 30px; }
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  #comming-soon-page #comming-soon h2 {
+    font-size: 38px; } }
+
+@media screen and (max-width: 575px) {
+  #comming-soon-page #comming-soon h2 {
+    font-size: 26px; }
+  #comming-soon-page #comming-soon p {
+    font-size: 18px; }
+  #comming-soon-page #comming-soon a.btn {
+    font-size: 16px;
+    padding: 15px 20px; }
+  #comming-soon-page #comming-soon .time-box {
+    padding-left: 25px !important; }
+    #comming-soon-page #comming-soon .time-box:first-child {
+      padding-left: 0 !important; }
+    #comming-soon-page #comming-soon .time-box:nth-last-child() {
+      padding-left: 0 !important; }
+    #comming-soon-page #comming-soon .time-box h4 {
+      font-size: 40px; }
+    #comming-soon-page #comming-soon .time-box p {
+      font-size: 15px; } }
 
 html {
   overflow-y: hidden;

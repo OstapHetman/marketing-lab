@@ -9,85 +9,121 @@
     padding-top: 0;
     padding-bottom: 0;
   }
-}
-#comming-soon {
-  background: url("../img/home/header/header-bg.png") no-repeat;
-  background-size: contain;
-  background-position: center center;
-  padding: 20px 0px;
-  $btn-bg: #dd221c;
-  $head-text-clr: #2d2d2d;
-  $head-text-fnts: 54px;
-  $p-color: #ec3832;
-  $p-fnts: 20px;
-  $btn-fnts: 22px;
-  h2 {
-    @include font("Gilroy-ExtraBold", $head-text-fnts, 400, 5.4px);
-    color: $head-text-clr;
-    margin-bottom: 45px;
-  }
-  p {
-    @include font("PTSans", $p-fnts, 400, 2px);
-    color: $p-color;
-    margin-bottom: 33px;
-  }
-  a {
-    @include font("Gilroy-ExtraBold", $btn-fnts, 400, 2.6px);
-    background-color: $btn-bg;
-    border-radius: 36px;
-    color: #fff;
-    position: relative;
-    padding: 17px 30px;
-    transition: opacity 0.7s ease-in-out;
-    $c1: rgba(255, 8, 0, 0.5);
-    $c2: rgba(255, 8, 0, 0);
-    @include pulseBtns($c1, $c2, one);
-    &:hover {
-      opacity: 0.8;
-    }
-    &:after {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      right: 0;
-      border-radius: 36px;
-      z-index: -1;
-      box-shadow: -5px 4px 36px 10px rgba(255, 8, 0, 0.4);
-    }
-  }
-  .counter {
-    h4 {
-      @include font("Gilroy-ExtraBold", 40px, 400, 5.4px);
+
+  #comming-soon {
+    background: url("../img/home/header/header-bg.png") no-repeat;
+    background-size: contain;
+    background-position: center center;
+    padding: 20px 0px;
+    $btn-bg: #dd221c;
+    $head-text-clr: #2d2d2d;
+    $head-text-fnts: 54px;
+    $p-color: #ec3832;
+    $p-fnts: 20px;
+    $btn-fnts: 22px;
+    h2 {
+      @include font("Gilroy-ExtraBold", $head-text-fnts, 400, 5.4px);
+      color: $head-text-clr;
+      margin-bottom: 45px;
     }
     p {
-      font-weight: bold;
+      @include font("PTSans", $p-fnts, 400, 2px);
+      color: $p-color;
+      margin-bottom: 33px;
+    }
+    a {
+      @include font("Gilroy-ExtraBold", $btn-fnts, 400, 2.6px);
+      background-color: $btn-bg;
+      border-radius: 36px;
+      color: #fff;
+      position: relative;
+      padding: 17px 30px;
+      transition: opacity 0.7s ease-in-out;
+      $c1: rgba(255, 8, 0, 0.5);
+      $c2: rgba(255, 8, 0, 0);
+      @include pulseBtns($c1, $c2, one);
+      &:hover {
+        opacity: 0.8;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        border-radius: 36px;
+        z-index: -1;
+        box-shadow: -5px 4px 36px 10px rgba(255, 8, 0, 0.4);
+      }
+    }
+    .counter {
+      h4 {
+        @include font("Gilroy-ExtraBold", 40px, 400, 5.4px);
+      }
+      p {
+        font-weight: bold;
+      }
+    }
+  }
+  #comming-soon-footer {
+    background-color: unset;
+    .social-ul {
+      margin-top: 0;
+      li {
+        a:hover {
+          img {
+            transform: scale(1.1);
+            box-shadow: 0 24px 24px rgba(0, 0, 0, 0.2),
+              0 0 24px rgba(0, 0, 0, 0.12);
+            border-radius: 50%;
+          }
+        }
+        a {
+          img {
+            transition: all 0.5s ease-in-out;
+            border-radius: 50%;
+          }
+        }
+      }
+      li:not(:last-child) {
+        padding-right: 30px;
+      }
     }
   }
 }
-#comming-soon-footer {
-  background-color: unset;
-  .social-ul {
-    margin-top: 0;
-    li {
-      a:hover {
-        img {
-          transform: scale(1.1);
-          box-shadow: 0 24px 24px rgba(0, 0, 0, 0.2),
-            0 0 24px rgba(0, 0, 0, 0.12);
-          border-radius: 50%;
-        }
-      }
-      a {
-        img {
-          transition: all 0.5s ease-in-out;
-          border-radius: 50%;
-        }
-      }
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  #comming-soon-page #comming-soon h2 {
+    font-size: 38px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #comming-soon-page #comming-soon h2 {
+    font-size: 26px;
+  }
+  #comming-soon-page #comming-soon {
+    p {
+      font-size: 18px;
     }
-    li:not(:last-child) {
-      padding-right: 30px;
+    a.btn {
+      font-size: 16px;
+      padding: 15px 20px;
+    }
+    .time-box {
+      padding-left: 25px !important;
+      &:first-child {
+        padding-left: 0 !important;
+      }
+      &:nth-last-child() {
+        padding-left: 0 !important;
+      }
+      h4 {
+        font-size: 40px;
+      }
+      p {
+        font-size: 15px;
+      }
     }
   }
 }
