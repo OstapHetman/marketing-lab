@@ -78,15 +78,83 @@
       border-bottom-right-radius: 10px;
       background-color: #f8f8f8;
       position: relative;
-      // &:before {
-      //   content: "";
-      //   position: absolute;
-      //   top: -7px;
-      //   left: 0;
-      //   width: 100%;
-      //   height: 8px;
-      //   background-color: #f8f8f8;
-      // }
     }
+  }
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    .title {
+      h2 {
+        font-size: 50px;
+      }
+      .section-line {
+        width: 100px;
+      }
+    }
+    .card .card-header button {
+      font-size: 16px;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .card .card-header button {
+      font-size: 11px !important;
+    }
+    .card .card-body {
+      font-size: 12px;
+    }
+    .card .card-header button:after,
+    .card .card-header button.open.collapsed:after {
+      top: 36%;
+    }
+  }
+  @media screen and (min-width: 576px) and (max-width: 991px) {
+    .title {
+      .section-line {
+        margin-top: 15px;
+        width: 250px;
+        height: 5px;
+      }
+      .col-12 {
+        justify-content: center;
+        text-align: center;
+      }
+    }
+    .card .card-header button {
+      font-size: 14px;
+    }
+  }
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    .title {
+      padding-bottom: 40px;
+    }
+  }
+  @media screen and (max-width: 575px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    .title {
+      padding-bottom: 40px;
+      .section-line {
+        display: none;
+      }
+      .col-12 {
+        justify-content: center;
+        text-align: center;
+      }
+    }
+  }
+  .card-header {
+    padding: 5px 5px;
+  }
+  .card .card-header button {
+    font-size: 12px !important;
+    letter-spacing: 1px;
+  }
+  .card .card-body {
+    font-size: 12px;
+    padding-left: 20px;
+  }
+  .card .card-header button:after,
+  .card .card-header button.open.collapsed:after {
+    top: 36%;
   }
 }

@@ -125,4 +125,129 @@ footer {
       }
     }
   }
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    ul li a {
+      font-size: 15px;
+    }
+    .footer-social .phone-ul li a:first-child {
+      font-size: 19px;
+    }
+    .bottom-footer {
+      a.brand {
+        font-size: 36px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .phone-ul {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .footer-social .social-ul {
+      margin-top: 20px;
+      justify-content: center !important;
+    }
+    .footer-social .phone-ul li a:nth-child(2) {
+      text-align: center !important;
+    }
+    .bottom-footer {
+      a.brand {
+        font-size: 24px;
+      }
+      p {
+        font-size: 14px;
+      }
+      a.btn {
+        padding: 15px 20px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    .phone-ul {
+      display: flex;
+      justify-content: center;
+      margin-top: 15px;
+    }
+    .footer-social .social-ul {
+      margin-top: 15px;
+      justify-content: center !important;
+    }
+    .footer-social .phone-ul li a:first-child {
+      font-size: 19px;
+    }
+    .footer-social .phone-ul li a:nth-child(2) {
+      text-align: center !important;
+    }
+    .link-col:nth-child(3) {
+      margin-top: 15px;
+    }
+    .bottom-footer {
+      a.brand {
+        font-size: 24px;
+      }
+      p {
+        font-size: 14px;
+      }
+      a.btn {
+        padding: 15px 20px;
+      }
+      .box:nth-child(1) {
+        order: 1;
+      }
+      .box:nth-child(2) {
+        margin-top: 25px;
+        order: 3;
+      }
+      .box:nth-child(3) {
+        order: 2;
+      }
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    padding-top: 20px;
+    .phone-ul {
+      display: flex;
+      justify-content: center;
+      margin-top: 15px;
+    }
+    .footer-social .social-ul {
+      margin-top: 14px;
+      justify-content: center !important;
+    }
+    .footer-social .phone-ul li a:first-child {
+      font-size: 19px;
+    }
+    .footer-social .phone-ul li a:nth-child(2) {
+      text-align: center !important;
+    }
+    .link-col {
+      margin-top: 15px;
+    }
+    .bottom-footer {
+      a.brand {
+        font-size: 24px;
+      }
+      p {
+        font-size: 14px;
+      }
+      a.btn {
+        padding: 10px 15px;
+        font-size: 13px;
+      }
+      .box:nth-child(1) {
+        order: 1;
+      }
+      .box:nth-child(2) {
+        margin-top: 25px;
+        order: 3;
+      }
+      .box:nth-child(3) {
+        order: 2;
+      }
+    }
+  }
 }

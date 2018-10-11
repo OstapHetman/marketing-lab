@@ -18,6 +18,8 @@ setTimeout(() => {
 
   const body = document.getElementsByTagName("body")[0];
   body.style.overflow = "auto";
+  const html = document.getElementsByTagName("html")[0];
+  html.style.overflow = "auto";
 }, 2500);
 
 if (document.querySelector(".counter")) {

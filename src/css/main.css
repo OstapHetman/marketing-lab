@@ -430,6 +430,17 @@ header {
       font-weight: 400;
       letter-spacing: 5.4px;
       color: #2d2d2d; }
+      @media screen and (min-width: 768px) and (max-width: 991px) {
+        #services-cost .title h2 {
+          font-size: 40px; } }
+      @media screen and (min-width: 576px) and (max-width: 767px) {
+        #services-cost .title h2 {
+          font-size: 36px;
+          margin: auto; } }
+      @media screen and (max-width: 575px) {
+        #services-cost .title h2 {
+          font-size: 24px;
+          margin: auto; } }
     #services-cost .title .section-line {
       max-width: 464px;
       width: 100%;
@@ -509,6 +520,51 @@ header {
       border-radius: 31px;
       z-index: -1;
       box-shadow: -5px 4px 36px 10px rgba(255, 8, 0, 0.4); }
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    #services-cost .title .section-line {
+      max-width: 350px; } }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    #services-cost .title .section-line {
+      max-width: 200px; } }
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    #services-cost .title {
+      padding-bottom: 50px; }
+    #services-cost .title .section-line {
+      max-width: 240px;
+      margin-right: auto;
+      margin-top: 15px;
+      height: 5px; }
+    #services-cost .title .col-12 {
+      justify-content: center; }
+    #services-cost .services {
+      justify-content: center; }
+      #services-cost .services .services-item__icon {
+        min-height: unset; }
+        #services-cost .services .services-item__icon img {
+          max-width: 80px;
+          height: auto; } }
+  @media screen and (max-width: 575px) {
+    #services-cost .title {
+      padding-bottom: 50px; }
+    #services-cost .title .section-line {
+      max-width: 190px;
+      margin-right: auto;
+      margin-top: 15px;
+      height: 5px; }
+    #services-cost .title .col-12 {
+      justify-content: center; }
+    #services-cost .services {
+      justify-content: center; }
+      #services-cost .services .services-item h5 {
+        font-size: 26px; }
+      #services-cost .services .services-item__icon {
+        min-height: unset; }
+        #services-cost .services .services-item__icon img {
+          max-width: 80px;
+          height: auto; }
+    #services-cost button {
+      font-size: 16px;
+      padding: 15px 20px; } }
 
 #tariff-plans {
   padding-top: 35px;
@@ -520,6 +576,17 @@ header {
     letter-spacing: 5.4px;
     color: #2d2d2d;
     margin-bottom: 45px; }
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+      #tariff-plans h2 {
+        font-size: 40px; } }
+    @media screen and (min-width: 576px) and (max-width: 767px) {
+      #tariff-plans h2 {
+        font-size: 36px;
+        margin: auto; } }
+    @media screen and (max-width: 575px) {
+      #tariff-plans h2 {
+        font-size: 24px;
+        margin: auto; } }
   #tariff-plans .tariff-main {
     background: url("../img/home/tariff/tariff-bg.png") no-repeat;
     background-size: contain;
@@ -654,6 +721,105 @@ header {
   100% {
     -moz-box-shadow: 0 0 0 0 rgba(9, 140, 200, 0);
     box-shadow: 0 0 0 0 rgba(9, 140, 200, 0); } }
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    #tariff-plans .tariff-item {
+      margin-top: 45px;
+      max-width: 328px; }
+      #tariff-plans .tariff-item__head {
+        padding-top: 50px;
+        padding-bottom: 40px; }
+        #tariff-plans .tariff-item__head h4 {
+          font-family: "Gilroy-ExtraBold";
+          font-size: 36px;
+          letter-spacing: 4.5px; }
+        #tariff-plans .tariff-item__head p {
+          font-family: "Gilroy-ExtraBold";
+          font-size: 18px;
+          letter-spacing: 2px; }
+      #tariff-plans .tariff-item__body-text {
+        font-family: "PTSans";
+        font-size: 18px;
+        letter-spacing: 2px; }
+      #tariff-plans .tariff-item__body-btn button {
+        font-family: "Gilroy-ExtraBold";
+        font-size: 18px;
+        letter-spacing: 1.9px;
+        padding: 17px 25px; } }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    #tariff-plans .tariff-item {
+      margin-top: 45px;
+      max-width: 320px; }
+      #tariff-plans .tariff-item__head {
+        padding-top: 50px;
+        padding-bottom: 40px; }
+        #tariff-plans .tariff-item__head h4 {
+          font-family: "Gilroy-ExtraBold";
+          font-size: 36px;
+          letter-spacing: 4.5px; }
+        #tariff-plans .tariff-item__head p {
+          font-family: "Gilroy-ExtraBold";
+          font-size: 18px;
+          letter-spacing: 2px; }
+      #tariff-plans .tariff-item__body-text {
+        font-family: "PTSans";
+        font-size: 18px;
+        letter-spacing: 2px; }
+      #tariff-plans .tariff-item__body-btn button {
+        font-family: "Gilroy-ExtraBold";
+        font-size: 18px;
+        letter-spacing: 1.9px;
+        padding: 17px 25px; } }
+  @media screen and (min-width: 576px) and (max-width: 768px) {
+    #tariff-plans .tariff-item {
+      margin-top: 45px;
+      max-width: 320px; }
+      #tariff-plans .tariff-item__head {
+        padding-top: 30px;
+        padding-bottom: 20px; }
+        #tariff-plans .tariff-item__head h4 {
+          font-family: "Gilroy-ExtraBold";
+          font-size: 30px;
+          letter-spacing: 4.5px; }
+        #tariff-plans .tariff-item__head p {
+          font-family: "Gilroy-ExtraBold";
+          font-size: 16px;
+          letter-spacing: 2px; }
+      #tariff-plans .tariff-item__body-text {
+        font-family: "PTSans";
+        font-size: 16px;
+        letter-spacing: 2px; }
+      #tariff-plans .tariff-item__body-btn button {
+        font-family: "Gilroy-ExtraBold";
+        font-size: 16px;
+        letter-spacing: 1.9px;
+        padding: 15px 20px; } }
+  @media screen and (max-width: 575px) {
+    #tariff-plans .tariff-item {
+      margin-top: 45px;
+      max-width: 320px; }
+      #tariff-plans .tariff-item__head {
+        padding-top: 30px;
+        padding-bottom: 20px; }
+        #tariff-plans .tariff-item__head h4 {
+          font-family: "Gilroy-ExtraBold";
+          font-size: 30px;
+          letter-spacing: 4.5px; }
+        #tariff-plans .tariff-item__head p {
+          font-family: "Gilroy-ExtraBold";
+          font-size: 16px;
+          letter-spacing: 2px; }
+      #tariff-plans .tariff-item__body {
+        padding-top: 20px;
+        padding-bottom: 20px; }
+        #tariff-plans .tariff-item__body-text {
+          font-family: "PTSans";
+          font-size: 16px;
+          letter-spacing: 2px; }
+        #tariff-plans .tariff-item__body-btn button {
+          font-family: "Gilroy-ExtraBold";
+          font-size: 16px;
+          letter-spacing: 1.9px;
+          padding: 15px 20px; } }
 
 #our-works .title {
   padding-bottom: 88px; }
@@ -663,8 +829,20 @@ header {
     font-weight: 400;
     letter-spacing: 5.4px;
     color: #2d2d2d; }
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+      #our-works .title h2 {
+        font-size: 40px; } }
+    @media screen and (min-width: 576px) and (max-width: 767px) {
+      #our-works .title h2 {
+        font-size: 36px;
+        margin: auto; } }
+    @media screen and (max-width: 575px) {
+      #our-works .title h2 {
+        font-size: 24px;
+        margin: auto; } }
   #our-works .title .section-line {
-    width: 610px;
+    max-width: 610px;
+    width: 100%;
     height: 8px;
     background-color: #dd221c; }
 
@@ -851,6 +1029,52 @@ header {
     -moz-box-shadow: 0 0 0 0 rgba(56, 154, 222, 0);
     box-shadow: 0 0 0 0 rgba(56, 154, 222, 0); } }
 
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  #our-works .title .section-line {
+    max-width: 480px; }
+  #our-works .work-col .work-item__text h6 {
+    font-size: 15px; } }
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #our-works .title .section-line {
+    max-width: 300px; }
+  #our-works .work-col .work-item__text h6 {
+    font-size: 15px; } }
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  #our-works {
+    margin-top: 40px; }
+    #our-works .title .section-line {
+      max-width: 220px;
+      margin-right: auto;
+      margin-top: 15px;
+      height: 5px; }
+    #our-works .title .col-12 {
+      justify-content: center;
+      text-align: center; }
+    #our-works .work-col .work-item__text {
+      min-height: 180px; }
+      #our-works .work-col .work-item__text h6 {
+        font-size: 14px; }
+      #our-works .work-col .work-item__text p {
+        font-size: 12px; } }
+
+@media screen and (max-width: 575px) {
+  #our-works {
+    margin-top: 40px; }
+    #our-works .title .section-line {
+      max-width: 180px;
+      margin-right: auto;
+      margin-top: 15px;
+      height: 5px; }
+    #our-works .title .col-12 {
+      justify-content: center;
+      text-align: center; }
+    #our-works .work-col .work-item__text h6 {
+      font-size: 14px; }
+    #our-works .work-col .work-item__text p {
+      font-size: 13px; } }
+
 #gift {
   background: url("../img/home/gift/gift-bg.png") no-repeat;
   background-size: cover;
@@ -908,6 +1132,38 @@ header {
       right: 0;
       border-radius: 36px;
       box-shadow: 0 0 98px 38px rgba(213, 205, 205, 0.57); }
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    #gift h4 {
+      font-size: 36px; }
+    #gift button {
+      font-size: 22px; } }
+  @media screen and (min-width: 576px) and (max-width: 991px) {
+    #gift {
+      padding-top: 25px;
+      padding-bottom: 25px; }
+      #gift .row {
+        text-align: center; }
+      #gift h4 {
+        font-size: 34px; }
+      #gift button {
+        font-size: 20px;
+        margin-top: 25px; } }
+  @media screen and (max-width: 575px) {
+    #gift {
+      padding-top: 20px;
+      padding-bottom: 20px; }
+      #gift .row {
+        text-align: center; }
+      #gift h4 {
+        font-size: 22px;
+        line-height: unset;
+        letter-spacing: 1.5px; }
+      #gift small {
+        font-size: 14px; }
+      #gift button {
+        font-size: 16px;
+        margin-top: 10px;
+        padding: 15px 20px; } }
 
 #questions {
   padding-top: 60px;
@@ -920,6 +1176,17 @@ header {
       font-weight: 400;
       letter-spacing: 5.4px;
       color: #2d2d2d; }
+      @media screen and (min-width: 768px) and (max-width: 991px) {
+        #questions .title h2 {
+          font-size: 40px; } }
+      @media screen and (min-width: 576px) and (max-width: 767px) {
+        #questions .title h2 {
+          font-size: 36px;
+          margin: auto; } }
+      @media screen and (max-width: 575px) {
+        #questions .title h2 {
+          font-size: 24px;
+          margin: auto; } }
     #questions .title .section-line {
       width: 180px;
       height: 8px;
@@ -980,6 +1247,59 @@ header {
       border-bottom-right-radius: 10px;
       background-color: #f8f8f8;
       position: relative; }
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    #questions .title h2 {
+      font-size: 50px; }
+    #questions .title .section-line {
+      width: 100px; }
+    #questions .card .card-header button {
+      font-size: 16px; } }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    #questions .card .card-header button {
+      font-size: 11px !important; }
+    #questions .card .card-body {
+      font-size: 12px; }
+    #questions .card .card-header button:after,
+    #questions .card .card-header button.open.collapsed:after {
+      top: 36%; } }
+  @media screen and (min-width: 576px) and (max-width: 991px) {
+    #questions .title .section-line {
+      margin-top: 15px;
+      width: 250px;
+      height: 5px; }
+    #questions .title .col-12 {
+      justify-content: center;
+      text-align: center; }
+    #questions .card .card-header button {
+      font-size: 14px; } }
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    #questions {
+      padding-top: 30px;
+      padding-bottom: 30px; }
+      #questions .title {
+        padding-bottom: 40px; } }
+  @media screen and (max-width: 575px) {
+    #questions {
+      padding-top: 30px;
+      padding-bottom: 30px; }
+      #questions .title {
+        padding-bottom: 40px; }
+        #questions .title .section-line {
+          display: none; }
+        #questions .title .col-12 {
+          justify-content: center;
+          text-align: center; } }
+  #questions .card-header {
+    padding: 5px 5px; }
+  #questions .card .card-header button {
+    font-size: 12px !important;
+    letter-spacing: 1px; }
+  #questions .card .card-body {
+    font-size: 12px;
+    padding-left: 20px; }
+  #questions .card .card-header button:after,
+  #questions .card .card-header button.open.collapsed:after {
+    top: 36%; }
 
 #any-q {
   background-color: #dd221c;
@@ -1033,6 +1353,44 @@ header {
       right: 0;
       border-radius: 30px;
       box-shadow: 0 0 9px 4px rgba(255, 255, 255, 0.57); }
+  @media screen and (min-width: 992px) and (max-width: 1999px) {
+    #any-q h3 {
+      font-size: 30px; } }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    #any-q .left {
+      justify-content: center;
+      text-align: center; }
+    #any-q h3 {
+      font-size: 30px; }
+    #any-q button {
+      margin-top: 20px;
+      font-size: 16px;
+      padding: 15px 20px; } }
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    #any-q .left {
+      justify-content: center;
+      text-align: center; }
+      #any-q .left img {
+        max-width: 50px; }
+    #any-q h3 {
+      font-size: 26px; }
+    #any-q button {
+      margin-top: 20px;
+      font-size: 16px;
+      padding: 15px 20px; } }
+  @media screen and (max-width: 575px) {
+    #any-q .left {
+      justify-content: center;
+      text-align: center; }
+      #any-q .left img {
+        max-width: 40px; }
+    #any-q h3 {
+      font-size: 17px;
+      padding-left: 7px; }
+    #any-q button {
+      margin-top: 15px;
+      font-size: 14px;
+      padding: 10px 15px; } }
 
 footer {
   padding-top: 50px;
@@ -1140,6 +1498,86 @@ footer {
         right: 0;
         border-radius: 31px;
         box-shadow: -5px 4px 36px 10px rgba(255, 8, 0, 0.4); }
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    footer ul li a {
+      font-size: 15px; }
+    footer .footer-social .phone-ul li a:first-child {
+      font-size: 19px; }
+    footer .bottom-footer a.brand {
+      font-size: 36px; } }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    footer .phone-ul {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px; }
+    footer .footer-social .social-ul {
+      margin-top: 20px;
+      justify-content: center !important; }
+    footer .footer-social .phone-ul li a:nth-child(2) {
+      text-align: center !important; }
+    footer .bottom-footer a.brand {
+      font-size: 24px; }
+    footer .bottom-footer p {
+      font-size: 14px; }
+    footer .bottom-footer a.btn {
+      padding: 15px 20px; } }
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    footer .phone-ul {
+      display: flex;
+      justify-content: center;
+      margin-top: 15px; }
+    footer .footer-social .social-ul {
+      margin-top: 15px;
+      justify-content: center !important; }
+    footer .footer-social .phone-ul li a:first-child {
+      font-size: 19px; }
+    footer .footer-social .phone-ul li a:nth-child(2) {
+      text-align: center !important; }
+    footer .link-col:nth-child(3) {
+      margin-top: 15px; }
+    footer .bottom-footer a.brand {
+      font-size: 24px; }
+    footer .bottom-footer p {
+      font-size: 14px; }
+    footer .bottom-footer a.btn {
+      padding: 15px 20px; }
+    footer .bottom-footer .box:nth-child(1) {
+      order: 1; }
+    footer .bottom-footer .box:nth-child(2) {
+      margin-top: 25px;
+      order: 3; }
+    footer .bottom-footer .box:nth-child(3) {
+      order: 2; } }
+  @media screen and (max-width: 575px) {
+    footer {
+      padding-top: 20px; }
+      footer .phone-ul {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px; }
+      footer .footer-social .social-ul {
+        margin-top: 14px;
+        justify-content: center !important; }
+      footer .footer-social .phone-ul li a:first-child {
+        font-size: 19px; }
+      footer .footer-social .phone-ul li a:nth-child(2) {
+        text-align: center !important; }
+      footer .link-col {
+        margin-top: 15px; }
+      footer .bottom-footer a.brand {
+        font-size: 24px; }
+      footer .bottom-footer p {
+        font-size: 14px; }
+      footer .bottom-footer a.btn {
+        padding: 10px 15px;
+        font-size: 13px; }
+      footer .bottom-footer .box:nth-child(1) {
+        order: 1; }
+      footer .bottom-footer .box:nth-child(2) {
+        margin-top: 25px;
+        order: 3; }
+      footer .bottom-footer .box:nth-child(3) {
+        order: 2; } }
 
 #comming-soon-page {
   overflow: hidden;
@@ -1231,6 +1669,9 @@ footer {
       border-radius: 50%; }
     #comming-soon-footer .social-ul li:not(:last-child) {
       padding-right: 30px; }
+
+html {
+  overflow-y: hidden; }
 
 body {
   overflow: scroll;

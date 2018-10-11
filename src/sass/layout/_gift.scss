@@ -37,4 +37,46 @@
       box-shadow: 0 0 98px 38px rgba(213, 205, 205, 0.57);
     }
   }
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    h4 {
+      font-size: 36px;
+    }
+    button {
+      font-size: 22px;
+    }
+  }
+  @media screen and (min-width: 576px) and (max-width: 991px) {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    .row {
+      text-align: center;
+    }
+    h4 {
+      font-size: 34px;
+    }
+    button {
+      font-size: 20px;
+      margin-top: 25px;
+    }
+  }
+  @media screen and (max-width: 575px) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    .row {
+      text-align: center;
+    }
+    h4 {
+      font-size: 22px;
+      line-height: unset;
+      letter-spacing: 1.5px;
+    }
+    small {
+      font-size: 14px;
+    }
+    button {
+      font-size: 16px;
+      margin-top: 10px;
+      padding: 15px 20px;
+    }
+  }
 }

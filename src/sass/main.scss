@@ -25,6 +25,9 @@
 @import "pages/home";
 @import "pages/comming-soon";
 // ======================= //
+html {
+  overflow-y: hidden;
+}
 body {
   overflow: scroll;
   overflow-y: hidden;
