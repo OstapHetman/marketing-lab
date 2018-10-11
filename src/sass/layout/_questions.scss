@@ -141,20 +141,21 @@
         text-align: center;
       }
     }
+    .card-header {
+      padding: 5px 5px;
+    }
+    .card .card-header button {
+      font-size: 12px !important;
+      letter-spacing: 1px;
+    }
+    .card .card-body {
+      font-size: 12px;
+      padding-left: 20px;
+    }
+    .card .card-header button:after,
+    .card .card-header button.open.collapsed:after {
+      top: 36%;
+    }
   }
-  .card-header {
-    padding: 5px 5px;
-  }
-  .card .card-header button {
-    font-size: 12px !important;
-    letter-spacing: 1px;
-  }
-  .card .card-body {
-    font-size: 12px;
-    padding-left: 20px;
-  }
-  .card .card-header button:after,
-  .card .card-header button.open.collapsed:after {
-    top: 36%;
-  }
+  
 }

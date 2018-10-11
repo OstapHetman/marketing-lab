@@ -1551,18 +1551,18 @@ header {
           display: none; }
         #questions .title .col-12 {
           justify-content: center;
-          text-align: center; } }
-  #questions .card-header {
-    padding: 5px 5px; }
-  #questions .card .card-header button {
-    font-size: 12px !important;
-    letter-spacing: 1px; }
-  #questions .card .card-body {
-    font-size: 12px;
-    padding-left: 20px; }
-  #questions .card .card-header button:after,
-  #questions .card .card-header button.open.collapsed:after {
-    top: 36%; }
+          text-align: center; }
+      #questions .card-header {
+        padding: 5px 5px; }
+      #questions .card .card-header button {
+        font-size: 12px !important;
+        letter-spacing: 1px; }
+      #questions .card .card-body {
+        font-size: 12px;
+        padding-left: 20px; }
+      #questions .card .card-header button:after,
+      #questions .card .card-header button.open.collapsed:after {
+        top: 36%; } }
 
 #any-q {
   background-color: #dd221c;
