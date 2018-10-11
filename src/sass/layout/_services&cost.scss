@@ -85,7 +85,7 @@
   }
   @media screen and (min-width: 992px) and (max-width: 1199px) {
     .title .section-line {
-      max-width: 350px;
+      max-width: 320px;
     }
   }
   @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -129,9 +129,11 @@
     }
     .title .col-12 {
       justify-content: center;
+      text-align: center;
     }
     .services {
       justify-content: center;
+
       .services-item {
         h5 {
           font-size: 26px;

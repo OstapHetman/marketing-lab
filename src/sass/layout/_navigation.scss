@@ -11,6 +11,10 @@ nav.navbar {
     font-style: italic;
     color: $brand-clr;
     padding-right: 20px;
+    z-index: 101;
+  }
+  .navbar-toggler {
+    z-index: 101;
   }
   ul {
     &.main-ul {
@@ -70,6 +74,75 @@ nav.navbar {
             text-decoration: unset;
           }
         }
+      }
+    }
+  }
+
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    a.navbar-brand {
+      font-size: 36px;
+    }
+    ul.phone-ul li a:first-child {
+      font-size: 19px;
+    }
+    ul.main-ul li a.nav-link {
+      font-size: 16px;
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    padding-top: 20px;
+    a.navbar-brand {
+      font-size: 22px;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    &.second-nav {
+      padding: 0;
+    }
+    a.navbar-brand {
+      font-size: 32px;
+    }
+    ul.main-ul {
+      li {
+        a.nav-link {
+          text-align: center;
+          font-size: 22px;
+          &.btn {
+            font-size: 15px;
+            width: 50%;
+            margin: auto;
+          }
+        }
+      }
+    }
+    .navbar-toggler.open {
+      position: fixed;
+      right: 10px;
+    }
+    .navbar-collapse {
+      background: rgba(255, 255, 255, 0.93);
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      left: 0px;
+      z-index: 100;
+      height: 100vh;
+      transition: all 0.2s ease-in-out;
+      .nav-item {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        padding-right: unset;
+      }
+      ul {
+        &.phone-ul {
+          display: none;
+        }
+        transition: all 0.2s ease-in-out;
+        height: 100%;
+        justify-content: center;
       }
     }
   }

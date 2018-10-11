@@ -27,10 +27,12 @@
 // ======================= //
 html {
   overflow-y: hidden;
+  overflow-x: hidden;
 }
 body {
   overflow: scroll;
   overflow-y: hidden;
+  overflow-x: hidden;
   &.modal-open {
     overflow-y: hidden !important;
   }

@@ -1,3 +1,6 @@
+const html = document.getElementsByTagName("html")[0];
+const body = document.getElementsByTagName("body")[0];
+
 $(".navbar-toggler").click(function() {
   $(this).toggleClass("open");
 });
@@ -14,11 +17,9 @@ if (document.querySelectorAll(".card .btn-link")) {
 
 setTimeout(() => {
   const preloader = document.querySelector(".preloader");
-  preloader.classList.add("none");
 
-  const body = document.getElementsByTagName("body")[0];
+  preloader.classList.add("none");
   body.style.overflow = "auto";
-  const html = document.getElementsByTagName("html")[0];
   html.style.overflow = "auto";
 }, 2500);
 
