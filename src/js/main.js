@@ -8,16 +8,15 @@ $(".navbar-toggler").click(function() {
 if (document.querySelectorAll(".card .btn-link")) {
   const cardBtns = document.querySelectorAll(".card .btn-link");
 
-  cardBtns.forEach(cardBtn => {
-    cardBtn.addEventListener("click", e => {
+  cardBtns.forEach(function(cardBtn) {
+    cardBtn.addEventListener("click", function(e) {
       e.target.classList.toggle("open");
     });
   });
 }
 
-setTimeout(() => {
+setTimeout(function() {
   const preloader = document.querySelector(".preloader");
-
   preloader.classList.add("none");
   body.style.overflow = "auto";
   html.style.overflow = "auto";
@@ -29,7 +28,7 @@ if (document.querySelector(".counter")) {
   const launchDate = new Date("Nov 1, 2018, 23:00:00").getTime();
 
   // Update every minute
-  const interval = setInterval(() => {
+  const interval = setInterval(function() {
     // Get todays date and time (ms)
     const now = new Date().getTime();
 
