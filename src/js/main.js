@@ -1,8 +1,17 @@
 const html = document.getElementsByTagName("html")[0];
 const body = document.getElementsByTagName("body")[0];
+const addToHiddenInputBtn = document.querySelectorAll(".addToInput");
+const hiddenInput = document.querySelector("#description");
 
 $(".navbar-toggler").click(function() {
   $(this).toggleClass("open");
+});
+
+addToHiddenInputBtn.forEach(function(button) {
+  button.addEventListener("click", function(event) {
+    const attrInfo = event.target.getAttribute("data-info");
+    hiddenInput.value = attrInfo;
+  });
 });
 
 if (document.querySelectorAll(".card .btn-link")) {
@@ -20,12 +29,12 @@ setTimeout(function() {
   preloader.classList.add("none");
   body.style.overflow = "auto";
   html.style.overflow = "auto";
-}, 2000);
+}, 1500);
 
 if (document.querySelector(".counter")) {
   const countdown = document.querySelector(".counter");
 
-  const launchDate = new Date("Nov 1, 2018, 23:00:00").getTime();
+  const launchDate = new Date("Nov 31, 2018, 23:00:00").getTime();
 
   // Update every minute
   const interval = setInterval(function() {
