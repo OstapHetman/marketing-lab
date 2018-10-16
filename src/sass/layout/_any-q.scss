@@ -12,16 +12,10 @@
   }
   button {
     @include font("Gilroy-ExtraBold", 22px, 400, 2.2px);
-    @include pulseBtns(rgba(255, 201, 0, 1), rgba(255, 201, 0, 0), ten);
-    background-image: linear-gradient(
-      -256deg,
-      #ffc900 0%,
-      #ffc900 66%,
-      #ebbc07 78%,
-      #ebbc07 100%
-    );
+    @include pulseBtns(rgba(248, 210, 65, 1), rgba(248, 210, 65, 0), gift);
+    background-color: #f8d241;
 
-    border-radius: 31px;
+    border-radius: 36px;
     color: #fff;
     position: relative;
     padding: 17px 30px;
@@ -33,8 +27,8 @@
       height: 100%;
       top: 0;
       right: 0;
-      border-radius: 30px;
-      box-shadow: 0 0 9px 4px rgba(255, 255, 255, 0.57);
+      border-radius: 36px;
+      box-shadow: 0 0 98px 38px rgba(213, 205, 205, 0.57);
     }
   }
   @media screen and (min-width: 992px) and (max-width: 1999px) {
