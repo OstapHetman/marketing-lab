@@ -185,7 +185,10 @@
       background-color: #f3f2f2;
       border-radius: 5px;
       border: unset;
-      padding: 5px 25px; }
+      padding: 5px 20px; }
+      #mainModal .modal-body form .nav-tabs .nav-link img {
+        width: 20px;
+        height: auto; }
       #mainModal .modal-body form .nav-tabs .nav-link:hover {
         border: unset; }
     #mainModal .modal-body form .nav-tabs .nav-link.active {
@@ -262,6 +265,9 @@
         color: #3b3a3a; }
     #mainModal .modal-body form .nav-tabs .nav-link {
       padding: 5px 20px; }
+      #mainModal .modal-body form .nav-tabs .nav-link img {
+        width: 16px;
+        height: auto; }
     #mainModal .modal-body input[type="submit"] {
       font-family: "Gilroy-ExtraBold";
       font-size: 16px;

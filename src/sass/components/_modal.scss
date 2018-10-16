@@ -102,7 +102,11 @@
           background-color: #f3f2f2;
           border-radius: 5px;
           border: unset;
-          padding: 5px 25px;
+          padding: 5px 20px;
+          img {
+            width: 20px;
+            height: auto;
+          }
           &:hover {
             border: unset;
           }
@@ -184,6 +188,10 @@
         .nav-tabs {
           .nav-link {
             padding: 5px 20px;
+            img {
+              width: 16px;
+              height: auto;
+            }
           }
         }
       }
