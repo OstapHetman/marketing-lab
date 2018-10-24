@@ -26,6 +26,78 @@
   font-family: "Proxima-Nova";
   src: url("../fonts/Proxima-Nova.otf") format("truetype"); }
 
+#message-button {
+  bottom: 20px;
+  right: 15px;
+  position: fixed;
+  cursor: pointer; }
+  #message-button .message-icon {
+    background-color: #dd221c;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    position: relative; }
+    #message-button .message-icon.active {
+      background-color: #fff; }
+      #message-button .message-icon.active svg {
+        transition: all 0.2s linear; }
+        #message-button .message-icon.active svg:first-child {
+          transform: scale(0.1); }
+        #message-button .message-icon.active svg:nth-child(2) {
+          visibility: visible;
+          opacity: 1;
+          transform: rotate(0deg) scale(1); }
+    #message-button .message-icon svg {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      top: 0;
+      margin: auto;
+      transition: all 0.2s linear; }
+      #message-button .message-icon svg:nth-child(2) {
+        transform: scale(0.1);
+        fill: white;
+        visibility: hidden;
+        opacity: 0; }
+  #message-button .popup {
+    bottom: 95px;
+    right: 15px;
+    position: fixed;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+    background: #fff;
+    position: fixed;
+    z-index: 1;
+    display: none;
+    cursor: default;
+    max-width: 300px; }
+    #message-button .popup .title {
+      font-family: "Proxima-Nova";
+      font-size: 24px;
+      letter-spacing: 1px;
+      padding-bottom: 20px; }
+    #message-button .popup__container {
+      padding: 30px 30px 35px 30px; }
+    #message-button .popup .social {
+      display: flex; }
+      #message-button .popup .social .telegram,
+      #message-button .popup .social .whatsapp {
+        margin-right: 15px; }
+      #message-button .popup .social .telegram,
+      #message-button .popup .social .whatsapp,
+      #message-button .popup .social .viber {
+        margin-top: 10px;
+        text-align: center; }
+        #message-button .popup .social .telegram__text,
+        #message-button .popup .social .whatsapp__text,
+        #message-button .popup .social .viber__text {
+          font-family: "LatoLight";
+          font-size: 12px;
+          letter-spacing: 1px;
+          padding-top: 8px; }
+
 .navbar-toggler {
   color: red;
   border: 0;

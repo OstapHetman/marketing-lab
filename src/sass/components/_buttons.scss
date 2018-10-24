@@ -1,0 +1,82 @@
+#message-button {
+  bottom: 20px;
+  right: 15px;
+  position: fixed;
+  cursor: pointer;
+  .message-icon {
+    background-color: #dd221c;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    &.active {
+      background-color: #fff;
+      svg {
+        transition: all 0.2s linear;
+        &:first-child {
+          transform: scale(0.1);
+        }
+        &:nth-child(2) {
+          visibility: visible;
+          opacity: 1;
+          transform: rotate(0deg) scale(1);
+        }
+      }
+    }
+
+    position: relative;
+    svg {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      top: 0;
+      margin: auto;
+      transition: all 0.2s linear;
+      &:nth-child(2) {
+        transform: scale(0.1);
+        fill: white;
+        visibility: hidden;
+        opacity: 0;
+      }
+    }
+  }
+  .popup {
+    bottom: 95px;
+    right: 15px;
+    position: fixed;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+    background: #fff;
+    position: fixed;
+    z-index: 1;
+    display: none;
+    cursor: default;
+    .title {
+      @include font("Proxima-Nova", 24px, 700, 1px);
+      padding-bottom: 20px;
+    }
+    max-width: 300px;
+    &__container {
+      padding: 30px 30px 35px 30px;
+    }
+
+    .social {
+      display: flex;
+      .telegram,
+      .whatsapp {
+        margin-right: 15px;
+      }
+      .telegram,
+      .whatsapp,
+      .viber {
+        margin-top: 10px;
+        text-align: center;
+        &__text {
+          @include font("LatoLight", 12px, 300, 1px);
+          padding-top: 8px;
+        }
+      }
+    }
+  }
+}

@@ -60,6 +60,19 @@ if (document.querySelector(".counter")) {
   }, 1000);
 }
 
+// Message icon
+const messageBtn = document.querySelector("#message-button");
+const popup = messageBtn.querySelector(".popup");
+
+messageBtn.addEventListener("click", function() {
+  let icon = messageBtn.querySelector(".message-icon");
+  icon.classList.toggle("active");
+  if (icon.classList.contains("active")) {
+    popup.style.display = "block";
+  } else {
+    popup.style.display = "none";
+  }
+});
 // Dropdown
 
 const getDropdownItems = document.querySelectorAll(
@@ -69,8 +82,6 @@ const dropDownBtn = document.querySelector(".dropdown-toggle");
 
 getDropdownItems.forEach(function(dropdownItem) {
   dropdownItem.addEventListener("click", function(event) {
-    if (this.classList.contains("kiev")) {
-    }
     let address = this.innerHTML;
     let changedAddress = document.getElementById("adress");
     changedAddress.innerHTML = address;
