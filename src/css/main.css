@@ -7,6 +7,10 @@
   src: url("../fonts/LatoRegular.ttf") format("truetype"); }
 
 @font-face {
+  font-family: "LatoLight";
+  src: url("../fonts/LatoLight.ttf") format("truetype"); }
+
+@font-face {
   font-family: "PTSans";
   src: url("../fonts/PtSans.ttf") format("truetype"); }
 
@@ -307,29 +311,123 @@ nav.navbar {
       padding-right: 0;
       padding-left: 0;
       position: relative; }
-  nav.navbar ul.phone-ul li a:first-child {
-    font-family: "Proxima-Nova";
-    font-size: 25px;
-    letter-spacing: 1px;
-    color: #2d2d2d; }
-    nav.navbar ul.phone-ul li a:first-child:hover {
-      text-decoration: unset; }
-  nav.navbar ul.phone-ul li a:nth-child(2) {
+  nav.navbar ul.phone-ul .dropdown {
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-left: 41px; }
+    nav.navbar ul.phone-ul .dropdown.show {
+      background-color: #faf9f9;
+      border-radius: 10px 10px 0 0; }
+  nav.navbar ul.phone-ul .kiev {
+    position: relative; }
+    nav.navbar ul.phone-ul .kiev:before {
+      content: url("../img/home/header/flag.png");
+      position: absolute;
+      left: -25px;
+      top: 4px; }
+  nav.navbar ul.phone-ul .moldova {
+    position: relative; }
+    nav.navbar ul.phone-ul .moldova:before {
+      content: url("../img/home/header/flag.png");
+      position: absolute;
+      left: -25px;
+      top: 4px; }
+  nav.navbar ul.phone-ul .russ {
+    position: relative; }
+    nav.navbar ul.phone-ul .russ:before {
+      content: url("../img/home/header/flag.png");
+      position: absolute;
+      left: -25px;
+      top: 4px; }
+  nav.navbar ul.phone-ul .dropdown-toggle {
+    background: unset;
+    padding: unset; }
+    nav.navbar ul.phone-ul .dropdown-toggle:focus {
+      outline: unset;
+      box-shadow: unset; }
+    nav.navbar ul.phone-ul .dropdown-toggle:after {
+      display: none; }
+  nav.navbar ul.phone-ul #adress {
+    text-align: left; }
+    nav.navbar ul.phone-ul #adress .city {
+      position: relative;
+      text-align: left;
+      font-family: "LatoLight";
+      font-size: 15px;
+      letter-spacing: 1px; }
+      nav.navbar ul.phone-ul #adress .city:after {
+        position: absolute;
+        width: 0;
+        height: 0;
+        right: 0;
+        vertical-align: 0.255em;
+        content: "";
+        border-top: 0.3em solid;
+        border-right: 0.3em solid transparent;
+        border-bottom: 0;
+        border-left: 0.3em solid transparent; }
+    nav.navbar ul.phone-ul #adress a {
+      font-family: "Proxima-Nova";
+      font-size: 25px;
+      letter-spacing: 1px;
+      color: #2d2d2d; }
+      nav.navbar ul.phone-ul #adress a:hover {
+        text-decoration: unset; }
+  nav.navbar ul.phone-ul .dropdown-menu {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #fdfbfb;
+    border: unset;
+    margin-top: 0;
+    max-width: 100%;
+    border-radius: 0 0 10px 10px; }
+    nav.navbar ul.phone-ul .dropdown-menu .social {
+      padding-top: 10px; }
+      nav.navbar ul.phone-ul .dropdown-menu .social ul li a:hover img {
+        transform: scale(1.1);
+        box-shadow: 0 24px 24px rgba(0, 0, 0, 0.2), 0 0 24px rgba(0, 0, 0, 0.12);
+        border-radius: 50%; }
+      nav.navbar ul.phone-ul .dropdown-menu .social ul li a img {
+        transition: all 0.5s ease-in-out;
+        border-radius: 50%; }
+      nav.navbar ul.phone-ul .dropdown-menu .social ul li:not(:last-child) {
+        padding-right: 12px; }
+  nav.navbar ul.phone-ul li .addToInput {
     font-family: "Proxima-Nova";
     font-size: 16px;
     letter-spacing: 1px;
-    color: #646464; }
-    nav.navbar ul.phone-ul li a:nth-child(2) span {
-      position: relative; }
-      nav.navbar ul.phone-ul li a:nth-child(2) span:before {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0px;
-        width: 100%;
-        height: 2px;
-        background-color: #dd221c; }
-    nav.navbar ul.phone-ul li a:nth-child(2):hover {
+    color: #646464;
+    position: relative; }
+    nav.navbar ul.phone-ul li .addToInput:hover {
+      cursor: pointer; }
+    nav.navbar ul.phone-ul li .addToInput:before {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0px;
+      width: 140px;
+      height: 2px;
+      background-color: #dd221c; }
+  nav.navbar ul.phone-ul li .dropdown-item {
+    padding: 10px 44px; }
+    nav.navbar ul.phone-ul li .dropdown-item:hover {
+      background-color: #faf9f9;
+      cursor: pointer; }
+  nav.navbar ul.phone-ul li span {
+    display: flex;
+    flex-direction: column; }
+  nav.navbar ul.phone-ul li span {
+    font-family: "LatoLight";
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #2d2d2d; }
+  nav.navbar ul.phone-ul li a {
+    font-family: "LatoLight";
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #2d2d2d; }
+    nav.navbar ul.phone-ul li a:hover {
       text-decoration: unset; }
   @media screen and (min-width: 992px) and (max-width: 1199px) {
     nav.navbar a.navbar-brand {

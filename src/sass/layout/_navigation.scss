@@ -45,31 +45,152 @@ nav.navbar {
         }
       }
     }
-
+    // Phone ul
     &.phone-ul {
-      li {
-        a:first-child {
+      .dropdown {
+        padding-top: 10px;
+        padding-right: 15px;
+        padding-bottom: 10px;
+        padding-left: 41px;
+        &.show {
+          background-color: #faf9f9;
+          border-radius: 10px 10px 0 0;
+        }
+      }
+      .kiev {
+        position: relative;
+        &:before {
+          content: url("../img/home/header/flag.png");
+          position: absolute;
+          left: -25px;
+          top: 4px;
+        }
+      }
+      .moldova {
+        position: relative;
+        &:before {
+          content: url("../img/home/header/flag.png");
+          position: absolute;
+          left: -25px;
+          top: 4px;
+        }
+      }
+      .russ {
+        position: relative;
+        &:before {
+          content: url("../img/home/header/flag.png");
+          position: absolute;
+          left: -25px;
+          top: 4px;
+        }
+      }
+      .dropdown-toggle {
+        background: unset;
+        padding: unset;
+        &:focus {
+          outline: unset;
+          box-shadow: unset;
+        }
+        &:after {
+          display: none;
+        }
+      }
+      #adress {
+        text-align: left;
+        .city {
+          position: relative;
+          text-align: left;
+          @include font("LatoLight", 15px, 300, 1px);
+          &:after {
+            position: absolute;
+            width: 0;
+            height: 0;
+            right: 0;
+            vertical-align: 0.255em;
+            content: "";
+            border-top: 0.3em solid;
+            border-right: 0.3em solid transparent;
+            border-bottom: 0;
+            border-left: 0.3em solid transparent;
+          }
+        }
+        a {
           @include font("Proxima-Nova", 25px, 700, 1px);
           color: #2d2d2d;
           &:hover {
             text-decoration: unset;
           }
         }
-        a:nth-child(2) {
-          @include font("Proxima-Nova", 16px, 700, 1px);
-          color: #646464;
-          span {
-            position: relative;
-            &:before {
-              content: "";
-              position: absolute;
-              left: 0;
-              bottom: 0px;
-              width: 100%;
-              height: 2px;
-              background-color: #dd221c;
+      }
+      .dropdown-menu {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: #fdfbfb;
+        border: unset;
+        margin-top: 0;
+        max-width: 100%;
+        border-radius: 0 0 10px 10px;
+        .social {
+          padding-top: 10px;
+          ul {
+            li {
+              a:hover {
+                img {
+                  transform: scale(1.1);
+                  box-shadow: 0 24px 24px rgba(0, 0, 0, 0.2),
+                    0 0 24px rgba(0, 0, 0, 0.12);
+                  border-radius: 50%;
+                }
+              }
+              a {
+                img {
+                  transition: all 0.5s ease-in-out;
+                  border-radius: 50%;
+                }
+              }
+            }
+            li:not(:last-child) {
+              padding-right: 12px;
             }
           }
+        }
+      }
+      li {
+        .addToInput {
+          @include font("Proxima-Nova", 16px, 700, 1px);
+          color: #646464;
+          position: relative;
+          &:hover {
+            cursor: pointer;
+          }
+          &:before {
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: 0px;
+            width: 140px;
+            height: 2px;
+            background-color: #dd221c;
+          }
+        }
+        .dropdown-item {
+          padding: 10px 44px;
+          &:hover {
+            background-color: #faf9f9;
+            cursor: pointer;
+          }
+        }
+        span {
+          display: flex;
+          flex-direction: column;
+        }
+        span {
+          @include font("LatoLight", 15px, 300, 1px);
+          color: #2d2d2d;
+        }
+        a {
+          @include font("LatoLight", 20px, 300, 1px);
+          color: #2d2d2d;
           &:hover {
             text-decoration: unset;
           }

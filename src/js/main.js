@@ -59,3 +59,20 @@ if (document.querySelector(".counter")) {
     countdown.querySelector("#seconds h4").innerHTML = seconds;
   }, 1000);
 }
+
+// Dropdown
+
+const getDropdownItems = document.querySelectorAll(
+  ".dropdown-menu .dropdown-item"
+);
+const dropDownBtn = document.querySelector(".dropdown-toggle");
+
+getDropdownItems.forEach(function(dropdownItem) {
+  dropdownItem.addEventListener("click", function(event) {
+    if (this.classList.contains("kiev")) {
+    }
+    let address = this.innerHTML;
+    let changedAddress = document.getElementById("adress");
+    changedAddress.innerHTML = address;
+  });
+});

@@ -16,7 +16,7 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Main Style-->
-    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/main.css">
     <!-- FavIcon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="manifest" href="manifest.json">
@@ -68,11 +68,55 @@
                 </ul>
                 <ul class="navbar-nav ml-auto phone-ul">
                     <li class="nav-item d-flex flex-column text-right">
-                        <a class="d-block mb-0" href="tel:+380444444444">+38 (044) 444-44-44</a>
+                        <!-- <a class="d-block mb-0" href="tel:+380444444444">+38 (044) 444-44-44</a>
                         <a class="d-block mb-0 addToInput " href="#" data-toggle="modal" data-target="#mainModal"
                             data-info="Заказать звонок">
                             <span data-info="Заказать звонок">Заказать звонок</span>
-                        </a>
+                        </a> -->
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <span id="adress">
+                                    <span class="city kiev">Киев</span>
+                                    <a href="tel:+380123132">+38 (044) 333-87-01</a>
+                                </span>
+                            </button>
+                            <span class="addToInput" data-toggle="modal" data-target="#mainModal" data-info="Заказать звонок">Заказать
+                                звонок</span>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <span class="dropdown-item " href="#">
+                                    <span class="city kiev">Киев</span>
+                                    <a class="" href="tel:+380123132">+38 (044) 333-87-01</a>
+                                </span>
+                                <span class="dropdown-item " href="#">
+                                    <span class="city moldova">Молдова, Кишинев</span>
+                                    <a class="" href="tel:+380123132">+373 (111) 111-11-11</a>
+                                </span>
+                                <span class="dropdown-item " href="#">
+                                    <span class="city russ">Россия, Москва</span>
+                                    <a class="" href="tel:+380123132">+79 (800) 111-11-11</a>
+                                </span>
+                                <div class="social">
+                                    <ul class="list-unstyled mb-0 d-flex justify-content-center">
+                                        <li>
+                                            <a href="#v">
+                                                <img src="img/home/viber.png" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#t">
+                                                <img src="img/home/telegram.png" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#f">
+                                                <img src="img/home/facebook.png" alt="">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -804,7 +848,7 @@
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <!-- Main JavaScript File -->
-    <script src="js/main.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
