@@ -80,6 +80,47 @@ const getDropdownItems = document.querySelectorAll(
 );
 const dropDownBtn = document.querySelector(".dropdown-toggle");
 
+dropDownBtn.addEventListener("click", function() {
+  let city = dropDownBtn.querySelector(".city");
+
+  getDropdownItems.forEach(function(dropdownItem) {
+    if (city.classList.contains("kiev")) {
+      document.querySelector(
+        ".dropdown-item .kiev"
+      ).parentElement.style.display = "none";
+
+      document.querySelector(
+        ".dropdown-item .russ"
+      ).parentElement.style.display = "flex";
+      document.querySelector(
+        ".dropdown-item .moldova"
+      ).parentElement.style.display = "flex";
+    } else if (city.classList.contains("moldova")) {
+      document.querySelector(
+        ".dropdown-item .moldova"
+      ).parentElement.style.display = "none";
+
+      document.querySelector(
+        ".dropdown-item .kiev"
+      ).parentElement.style.display = "flex";
+      document.querySelector(
+        ".dropdown-item .russ"
+      ).parentElement.style.display = "flex";
+    } else if (city.classList.contains("russ")) {
+      document.querySelector(
+        ".dropdown-item .russ"
+      ).parentElement.style.display = "none";
+
+      document.querySelector(
+        ".dropdown-item .moldova"
+      ).parentElement.style.display = "flex";
+      document.querySelector(
+        ".dropdown-item .kiev"
+      ).parentElement.style.display = "flex";
+    }
+  });
+});
+
 getDropdownItems.forEach(function(dropdownItem) {
   dropdownItem.addEventListener("click", function(event) {
     let address = this.innerHTML;
