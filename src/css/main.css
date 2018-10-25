@@ -385,7 +385,7 @@ nav.navbar {
       position: relative; }
   nav.navbar ul.phone-ul .dropdown {
     padding-top: 10px;
-    padding-right: 25px;
+    padding-right: 20px;
     padding-bottom: 15px;
     padding-left: 45px; }
     nav.navbar ul.phone-ul .dropdown.show {
@@ -484,7 +484,7 @@ nav.navbar {
       height: 2px;
       background-color: #dd221c; }
   nav.navbar ul.phone-ul li .dropdown-item {
-    padding: 10px 48px; }
+    padding: 10px 49px; }
     nav.navbar ul.phone-ul li .dropdown-item:hover {
       background-color: #faf9f9;
       cursor: pointer; }
