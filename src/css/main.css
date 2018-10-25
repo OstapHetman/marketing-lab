@@ -385,9 +385,9 @@ nav.navbar {
       position: relative; }
   nav.navbar ul.phone-ul .dropdown {
     padding-top: 10px;
-    padding-right: 15px;
-    padding-bottom: 10px;
-    padding-left: 41px; }
+    padding-right: 25px;
+    padding-bottom: 15px;
+    padding-left: 45px; }
     nav.navbar ul.phone-ul .dropdown.show {
       background-color: #faf9f9;
       border-radius: 10px 10px 0 0; }
@@ -396,21 +396,21 @@ nav.navbar {
     nav.navbar ul.phone-ul .kiev:before {
       content: url("../img/home/header/flag.png");
       position: absolute;
-      left: -25px;
+      left: -30px;
       top: 4px; }
   nav.navbar ul.phone-ul .moldova {
     position: relative; }
     nav.navbar ul.phone-ul .moldova:before {
       content: url("../img/home/header/flag.png");
       position: absolute;
-      left: -25px;
+      left: -30px;
       top: 4px; }
   nav.navbar ul.phone-ul .russ {
     position: relative; }
     nav.navbar ul.phone-ul .russ:before {
       content: url("../img/home/header/flag.png");
       position: absolute;
-      left: -25px;
+      left: -30px;
       top: 4px; }
   nav.navbar ul.phone-ul .dropdown-toggle {
     background: unset;
@@ -434,8 +434,8 @@ nav.navbar {
       width: 0;
       height: 0;
       content: "";
-      border: 4px solid transparent;
-      border-top: 4px solid #949495;
+      border: 5px solid transparent;
+      border-top: 5px solid #eae8e8;
       border-bottom: 0;
       display: inline-block;
       vertical-align: middle;
@@ -456,7 +456,8 @@ nav.navbar {
     max-width: 100%;
     border-radius: 0 0 10px 10px; }
     nav.navbar ul.phone-ul .dropdown-menu .social {
-      padding-top: 10px; }
+      padding-top: 10px;
+      padding-bottom: 10px; }
       nav.navbar ul.phone-ul .dropdown-menu .social ul li a:hover img {
         transform: scale(1.1);
         box-shadow: 0 24px 24px rgba(0, 0, 0, 0.2), 0 0 24px rgba(0, 0, 0, 0.12);
@@ -483,7 +484,7 @@ nav.navbar {
       height: 2px;
       background-color: #dd221c; }
   nav.navbar ul.phone-ul li .dropdown-item {
-    padding: 10px 44px; }
+    padding: 10px 48px; }
     nav.navbar ul.phone-ul li .dropdown-item:hover {
       background-color: #faf9f9;
       cursor: pointer; }
