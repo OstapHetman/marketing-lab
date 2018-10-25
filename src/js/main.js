@@ -73,15 +73,19 @@ messageBtn.addEventListener("click", function() {
     popup.style.display = "none";
   }
 });
-// Dropdown
 
+// Dropdown
 const getDropdownItems = document.querySelectorAll(
   ".dropdown-menu .dropdown-item"
 );
 const dropDownBtn = document.querySelector(".dropdown-toggle");
 
-dropDownBtn.addEventListener("click", function() {
+dropDownBtn.addEventListener("click", function(event) {
   let city = dropDownBtn.querySelector(".city");
+  if (event.target.tagName == "A") {
+    console.log("yess");
+    event.stopImmediatePropagation();
+  }
 
   getDropdownItems.forEach(function(dropdownItem) {
     if (city.classList.contains("kiev")) {
