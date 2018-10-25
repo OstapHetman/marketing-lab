@@ -83,7 +83,6 @@ const dropDownBtn = document.querySelector(".dropdown-toggle");
 dropDownBtn.addEventListener("click", function(event) {
   let city = dropDownBtn.querySelector(".city");
   if (event.target.tagName == "A") {
-    console.log("yess");
     event.stopImmediatePropagation();
   }
 
@@ -130,5 +129,9 @@ getDropdownItems.forEach(function(dropdownItem) {
     let address = this.innerHTML;
     let changedAddress = document.getElementById("adress");
     changedAddress.innerHTML = address;
+    if (event.target.tagName == "A") {
+      console.log("yess");
+      event.preventDefault();
+    }
   });
 });
