@@ -425,20 +425,21 @@ nav.navbar {
     nav.navbar ul.phone-ul #adress .city {
       position: relative;
       text-align: left;
+      flex-direction: row;
+      align-items: center;
       font-family: "LatoLight";
       font-size: 15px;
       letter-spacing: 1px; }
-      nav.navbar ul.phone-ul #adress .city:after {
-        position: absolute;
-        width: 0;
-        height: 0;
-        right: 0;
-        vertical-align: 0.255em;
-        content: "";
-        border-top: 0.3em solid;
-        border-right: 0.3em solid transparent;
-        border-bottom: 0;
-        border-left: 0.3em solid transparent; }
+    nav.navbar ul.phone-ul #adress .caret {
+      width: 0;
+      height: 0;
+      content: "";
+      border: 4px solid transparent;
+      border-top: 4px solid #949495;
+      border-bottom: 0;
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 5px; }
     nav.navbar ul.phone-ul #adress a {
       font-family: "Proxima-Nova";
       font-size: 25px;
