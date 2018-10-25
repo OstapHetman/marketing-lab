@@ -108,6 +108,11 @@
     #message-button .popup .social svg {
       transform: scale(0.8); } }
   @media screen and (max-width: 575px) {
+    #message-button .message-icon {
+      height: 50px;
+      width: 50px; }
+      #message-button .message-icon svg {
+        transform: scale(0.8); }
     #message-button .popup .social .telegram__text,
     #message-button .popup .social .whatsapp__text,
     #message-button .popup .social .viber__text {
@@ -373,7 +378,7 @@
       padding: 8px 20px; } }
 
 nav.navbar {
-  padding-top: 30px;
+  padding-top: 10px;
   padding-bottom: 5px; }
   nav.navbar a.navbar-brand {
     font-family: "Mania-Oblique";

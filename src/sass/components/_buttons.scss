@@ -99,6 +99,13 @@
   }
 
   @media screen and (max-width: 575px) {
+    .message-icon {
+      height: 50px;
+      width: 50px;
+      svg {
+        transform: scale(0.8);
+      }
+    }
     .popup .social .telegram__text,
     .popup .social .whatsapp__text,
     .popup .social .viber__text {
