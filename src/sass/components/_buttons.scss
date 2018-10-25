@@ -79,4 +79,44 @@
       }
     }
   }
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    .popup .social .telegram__text,
+    .popup .social .whatsapp__text,
+    .popup .social .viber__text {
+      padding-top: 0;
+    }
+    .popup {
+      .title {
+        font-size: 20px;
+        padding-bottom: 10px;
+      }
+      .social {
+        svg {
+          transform: scale(0.8);
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    .popup .social .telegram__text,
+    .popup .social .whatsapp__text,
+    .popup .social .viber__text {
+      padding-top: 0;
+    }
+    .popup {
+      &__container {
+        padding: 20px 20px 25px 20px;
+      }
+      .title {
+        font-size: 18px;
+        padding-bottom: 0;
+      }
+      .social {
+        svg {
+          transform: scale(0.6);
+        }
+      }
+    }
+  }
 }

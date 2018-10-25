@@ -203,20 +203,18 @@ nav.navbar {
 
   @media screen and (min-width: 992px) and (max-width: 1199px) {
     a.navbar-brand {
-      font-size: 36px;
+      font-size: 32px;
     }
-    ul.phone-ul li a:first-child {
-      font-size: 19px;
+    ul.phone-ul #adress {
+      a {
+        font-size: 17px;
+      }
+    }
+    ul.phone-ul li a {
+      font-size: 14px;
     }
     ul.main-ul li a.nav-link {
       font-size: 16px;
-    }
-  }
-
-  @media screen and (max-width: 575px) {
-    padding-top: 20px;
-    a.navbar-brand {
-      font-size: 22px;
     }
   }
 
@@ -267,6 +265,13 @@ nav.navbar {
         height: 100%;
         justify-content: center;
       }
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    padding-top: 20px;
+    a.navbar-brand {
+      font-size: 22px;
     }
   }
 }

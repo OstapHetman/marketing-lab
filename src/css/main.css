@@ -97,6 +97,28 @@
           font-size: 12px;
           letter-spacing: 1px;
           padding-top: 8px; }
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    #message-button .popup .social .telegram__text,
+    #message-button .popup .social .whatsapp__text,
+    #message-button .popup .social .viber__text {
+      padding-top: 0; }
+    #message-button .popup .title {
+      font-size: 20px;
+      padding-bottom: 10px; }
+    #message-button .popup .social svg {
+      transform: scale(0.8); } }
+  @media screen and (max-width: 575px) {
+    #message-button .popup .social .telegram__text,
+    #message-button .popup .social .whatsapp__text,
+    #message-button .popup .social .viber__text {
+      padding-top: 0; }
+    #message-button .popup__container {
+      padding: 20px 20px 25px 20px; }
+    #message-button .popup .title {
+      font-size: 18px;
+      padding-bottom: 0; }
+    #message-button .popup .social svg {
+      transform: scale(0.6); } }
 
 .navbar-toggler {
   color: red;
@@ -505,16 +527,13 @@ nav.navbar {
       text-decoration: unset; }
   @media screen and (min-width: 992px) and (max-width: 1199px) {
     nav.navbar a.navbar-brand {
-      font-size: 36px; }
-    nav.navbar ul.phone-ul li a:first-child {
-      font-size: 19px; }
+      font-size: 32px; }
+    nav.navbar ul.phone-ul #adress a {
+      font-size: 17px; }
+    nav.navbar ul.phone-ul li a {
+      font-size: 14px; }
     nav.navbar ul.main-ul li a.nav-link {
       font-size: 16px; } }
-  @media screen and (max-width: 575px) {
-    nav.navbar {
-      padding-top: 20px; }
-      nav.navbar a.navbar-brand {
-        font-size: 22px; } }
   @media screen and (max-width: 991px) {
     nav.navbar.second-nav {
       padding: 0; }
@@ -550,6 +569,11 @@ nav.navbar {
         justify-content: center; }
         nav.navbar .navbar-collapse ul.phone-ul {
           display: none; } }
+  @media screen and (max-width: 575px) {
+    nav.navbar {
+      padding-top: 20px; }
+      nav.navbar a.navbar-brand {
+        font-size: 22px; } }
 
 header {
   padding-top: 90px;
